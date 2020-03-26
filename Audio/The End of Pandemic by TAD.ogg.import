@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/The End of Pandemic by TAD.ogg-e6861b9f663bb74c9d0abc568b3e5f60.oggstr"
+
+[deps]
+
+source_file="res://Audio/The End of Pandemic by TAD.ogg"
+dest_files=[ "res://.import/The End of Pandemic by TAD.ogg-e6861b9f663bb74c9d0abc568b3e5f60.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

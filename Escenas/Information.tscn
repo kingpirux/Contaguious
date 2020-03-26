@@ -1,0 +1,93 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://Visuales/BigBox.png" type="Texture" id=1]
+[ext_resource path="res://Scripts/Game/Information.gd" type="Script" id=2]
+[ext_resource path="res://Fuentes/SmallFont.tres" type="DynamicFont" id=3]
+[ext_resource path="res://Visuales/Stats/IconHealthClean.png" type="Texture" id=4]
+[ext_resource path="res://Visuales/Stats/IconHappinessClean.png" type="Texture" id=5]
+[ext_resource path="res://Visuales/Stats/IconCleanessClean.png" type="Texture" id=6]
+[ext_resource path="res://Visuales/Stats/IconFoodClean.png" type="Texture" id=7]
+[ext_resource path="res://Visuales/Stats/IconSocialClean.png" type="Texture" id=8]
+[ext_resource path="res://Visuales/Stats/IconMoneyClean.png" type="Texture" id=9]
+
+[node name="Information" type="TextureRect"]
+margin_top = 66.0
+margin_right = 256.0
+margin_bottom = 194.0
+texture = ExtResource( 1 )
+script = ExtResource( 2 )
+
+[node name="Margin" type="MarginContainer" parent="."]
+editor/display_folded = true
+margin_right = 251.0
+margin_bottom = 128.0
+custom_constants/margin_right = 6
+custom_constants/margin_top = 6
+custom_constants/margin_left = 6
+custom_constants/margin_bottom = 6
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="information" type="HBoxContainer" parent="Margin"]
+margin_left = 6.0
+margin_top = 6.0
+margin_right = 250.0
+margin_bottom = 122.0
+rect_min_size = Vector2( 0, 116 )
+custom_constants/separation = 0
+
+[node name="Label" type="Label" parent="Margin/information"]
+margin_right = 244.0
+margin_bottom = 116.0
+rect_min_size = Vector2( 244, 116 )
+custom_fonts/font = ExtResource( 3 )
+custom_colors/font_color = Color( 0.972549, 0.933333, 0.74902, 1 )
+autowrap = true
+
+[node name="Results" type="HBoxContainer" parent="."]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -128.0
+margin_top = -26.0
+margin_right = 128.0
+margin_bottom = -8.0
+alignment = 1
+
+[node name="Stat0" type="TextureRect" parent="Results"]
+margin_left = 64.0
+margin_right = 82.0
+margin_bottom = 18.0
+texture = ExtResource( 4 )
+
+[node name="Stat1" type="TextureRect" parent="Results"]
+margin_left = 86.0
+margin_right = 104.0
+margin_bottom = 18.0
+texture = ExtResource( 5 )
+
+[node name="Stat2" type="TextureRect" parent="Results"]
+margin_left = 108.0
+margin_right = 126.0
+margin_bottom = 18.0
+texture = ExtResource( 6 )
+
+[node name="Stat3" type="TextureRect" parent="Results"]
+margin_left = 130.0
+margin_right = 148.0
+margin_bottom = 18.0
+texture = ExtResource( 7 )
+
+[node name="Stat4" type="TextureRect" parent="Results"]
+margin_left = 152.0
+margin_right = 170.0
+margin_bottom = 18.0
+texture = ExtResource( 8 )
+
+[node name="Stat5" type="TextureRect" parent="Results"]
+margin_left = 174.0
+margin_right = 192.0
+margin_bottom = 18.0
+texture = ExtResource( 9 )

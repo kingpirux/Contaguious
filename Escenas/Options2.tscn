@@ -1,0 +1,63 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Scripts/Game/Options.gd" type="Script" id=1]
+[ext_resource path="res://Visuales/Options/ButtomBig.png" type="Texture" id=2]
+[ext_resource path="res://Visuales/Options/ButtomBigPressed.png" type="Texture" id=3]
+[ext_resource path="res://Visuales/Options/ButtomBigHover.png" type="Texture" id=4]
+[ext_resource path="res://Fuentes/SmallFont.tres" type="DynamicFont" id=5]
+
+[node name="Options" type="HBoxContainer"]
+margin_right = 256.0
+margin_bottom = 32.0
+rect_min_size = Vector2( 0, 30 )
+custom_constants/separation = 8
+alignment = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Option1" type="TextureButton" parent="."]
+margin_left = 4.0
+margin_right = 124.0
+margin_bottom = 32.0
+texture_normal = ExtResource( 2 )
+texture_pressed = ExtResource( 3 )
+texture_hover = ExtResource( 4 )
+
+[node name="Label" type="Label" parent="Option1"]
+margin_left = 6.0
+margin_top = 8.0
+margin_right = 114.0
+margin_bottom = 22.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0.972549, 0.933333, 0.74902, 1 )
+text = "Opción 1"
+align = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Option2" type="TextureButton" parent="."]
+editor/display_folded = true
+margin_left = 132.0
+margin_right = 252.0
+margin_bottom = 32.0
+texture_normal = ExtResource( 2 )
+texture_pressed = ExtResource( 3 )
+texture_hover = ExtResource( 4 )
+
+[node name="Label" type="Label" parent="Option2"]
+margin_left = 6.0
+margin_top = 8.0
+margin_right = 114.0
+margin_bottom = 24.0
+custom_fonts/font = ExtResource( 5 )
+custom_colors/font_color = Color( 0.972549, 0.933333, 0.74902, 1 )
+text = "Opción 2"
+align = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}

@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Soft Mysterious Harp by VWolfdog.ogg-f31b7a108ee0b4ba52b627a4d5c04d9b.oggstr"
+
+[deps]
+
+source_file="res://Audio/Soft Mysterious Harp by VWolfdog.ogg"
+dest_files=[ "res://.import/Soft Mysterious Harp by VWolfdog.ogg-f31b7a108ee0b4ba52b627a4d5c04d9b.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

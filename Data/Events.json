@@ -1,0 +1,68 @@
+﻿{
+  "001": {
+    "eventText": "Tienes un antojo de comida rapida. Podrias pedir una buena hamburguesa por una aplicacion en tu celular y que un delivery te lo traiga",
+    "numberPersonsInvolved" : 1,
+    "tag" : ["delivery","comida","amigo"],
+    "optionsText": [
+    ["Hacer el pedido ($250)","{nombre} Llega con tu comida. Aunque tardó mucho más de lo esperado, tu pedido está chorreantemente delicioso.", 0,5,-10,25,5,-250,5],
+    ["Comer lo que queda en casa","Revuelves los cajones, la heladera y las bolsas por restos de comida, no es rico, pero servirá.", 0,0,-5,15,0,0,-5],
+    ["Llamar al perro...","Lo conoces desde hace muchos años, pero las épocas de crisis pueden volver a un hombre una bestia... el irritante perro del vecino sufrirá un accidente.", -5,15,-10,25,0,0,2]
+    ],
+    "desperateTrigger": [-1,-1,-1,-1,-1,249]
+  },
+"002": {
+    "eventText": "Tocan a tu puerta con un rítmico golpeteo, miras por la mirilla y ves a 4 personas sonrientes.",
+    "numberPersonsInvolved" : 4,
+    "tag" : ["visita","religion","desconocido"],
+    "optionsText": [
+    ["Abrir la puerta.","{nombre} se emocionan y se adelantan hacia ti hasta una distancia incomoda. Luego de una hora de hablarte sobre su religión 'Primigenia' te dejan un panfleto y se retiran.", 0,-10,0,25,0,0,10],
+     ["Decirles que se vallan.","Los ves enojarse y dibujar un extraño símbolo en el aire antes de irse.", 0,0,0,-10,0,0,-5],
+    ["Invitarlos a entrar.","La necesidad de contacto humano te nubla. {nombre} te cuentan de su religión 'Primigenia' y juntos realizan un ritual en el que sacrificas tu sangre. Te sientes satisfecho.", -50,100,-15,100,100,0,20]
+    ],
+    "desperateTrigger": [-1,-1,-1,-1,25,-1]
+  },
+"003": {
+    "eventText": "Decides que es momento de visitar un doctor. Sacas tu agenda y te fijas la distancia que hay que viajar. Mucha gente se cruzará en el camino de seguro.",
+    "numberPersonsInvolved" : 1,
+    "tag" : ["medico","profesional"],
+    "optionsText": [
+    ["Ir al hospital privado ($10000).","El hospital cuenta con todos los recursos para atenderte inmediatamente: {infectado}", 50,0,-10,0,10,10000,5],
+     ["Ir al hospital Público.","El hospital está repleto de personas de todas partes y de todo tipo de enfermedades y dolencias... Tras unas horas te atienden: {infectado}", 50,-10,-10,-10,-10,0,10],
+    ["Ir al curandero.","{nombre} es mucho más rápido y accesible que esos hospitales que solo quieren ponerte vacunas... Este chaman te atiende como una madre, te da algo homeopatico para comer y opina que: {potencial}", 0,20,-15,20,20,0,5]
+    ],
+    "desperateTrigger": [-1,-1,-1,-1,-1,10000]
+  },
+  "004": {
+    "eventText": "Algo te incomoda y quieres asegurarte que no sea ese virus que anda rondando. Mejor prevenir que curar dice el dicho. Llamemos a alguien que sepa del tema.",
+    "numberPersonsInvolved" : 0,
+    "tag" : ["hospital","profesional"],
+    "optionsText": [
+    ["Llamar al médico de cabecera ($5000).","Tras muchas preguntas, pasos y directivas, el médico dice que: {infectado}", 10,0,-10,0,10,5000,-5],
+     ["Hacer el test oficial.","Investigas esa página web que recomendó el gobierno. Allí hay una serie de pasos a seguir. Al terminar las preguntas online parece que: {potencial}", 0,0,0,-5,-5,0,-5],
+    ["Grupo de chismes.","Charlas durante horas con tus amigos en el celular hasta olvidarte de tus problemas. Al final debió ser un pedo atorado.", 0,20,0,-5,25,0,0]
+    ],
+    "desperateTrigger": [-1,-1,-1,-1,-1,5000]
+  },
+    "005": {
+    "eventText": "No te sientes bien y recuerdas que esto es parecido a los sintomas de aquel virus que está destruyendo el mundo... Mejor vamos al médico.",
+    "numberPersonsInvolved" : 2,
+    "tag" : ["medico","hospital"],
+    "optionsText": [
+    ["Hospital privado ($15000).","Tras muchas pruebas, estudios y análisis. Los médicos te miran y dan su veredicto: {infectado}", 20,0,10,-10,10,15000,15],
+     ["Asistencia Pública.","Es impresionante la cantidad de gente haciendo cola para atenderse de un resfriado... Tras varias personas estornudandote en la cara, llega tu turno. {nombre} te atienden diligentemente. {infectado}", 30,-20,-10,-5,-5,0,15],
+    ["Automedicarse.","No tienes tiempo. Si algo aprendiste en esta vida es a sobrevivir por tu cuenta. Sientes que {potencial}, así que lo unico que necesitas es un poco del milagroso GROG.", -30,30,-30,20,-10,0,5]
+    ],
+    "desperateTrigger": [-1,-1,-1,-1,-1,15000]
+  },
+      "006": {
+    "eventText": "El encierro empieza a deprimirte un poco, o quizas estas solo aburrido, el tema es que hacer cada día lo mismo es bastante incomodo ¿qué podríamos hacer para sentir un cambio?",
+    "numberPersonsInvolved": 1,
+    "tag" : ["juego","limpieza","trabajo"],
+    "optionsText": [
+    ["Realizar un hobbie.","", 20,0,10,-10,10,15000,15],
+     ["Limpiar la casa.","Es impresionante la cantidad de gente haciendo cola para atenderse de un resfriado... Tras varias personas estornudandote en la cara, llega tu turno. {nombre} te atiende diligentemente. {infectado}", 30,-20,-10,-5,-5,0,15],
+    ["Romper todo.","No tienes tiempo. Si algo aprendiste en esta vida es a sobrevivir por tu cuenta. Sientes que {potencial}, así que lo unico que necesitas es un poco del milagroso GROG.", -30,30,-30,20,-10,0,5]
+    ],
+    "desperateTrigger": [-1,50,-1,-1,-1,-1]
+  }
+}

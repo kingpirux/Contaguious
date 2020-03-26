@@ -1,0 +1,1175 @@
+[gd_scene load_steps=40 format=2]
+
+[ext_resource path="res://Scripts/Title.gd" type="Script" id=1]
+[ext_resource path="res://Fuentes/BigFont.tres" type="DynamicFont" id=2]
+[ext_resource path="res://Visuales/Options/ButtomBig.png" type="Texture" id=3]
+[ext_resource path="res://Visuales/Options/ButtomBigPressed.png" type="Texture" id=4]
+[ext_resource path="res://Visuales/Options/ButtomBigHover.png" type="Texture" id=5]
+[ext_resource path="res://Visuales/Options/ButtomBigDisabled.png" type="Texture" id=6]
+[ext_resource path="res://Fuentes/SmallFont.tres" type="DynamicFont" id=7]
+[ext_resource path="res://Visuales/Stats/IconHealth.png" type="Texture" id=8]
+[ext_resource path="res://Visuales/Stats/IconHealthPressed.png" type="Texture" id=9]
+[ext_resource path="res://Visuales/Stats/IconHealthHover.png" type="Texture" id=10]
+[ext_resource path="res://Visuales/Stats/IconHappiness.png" type="Texture" id=11]
+[ext_resource path="res://Visuales/Stats/IconHappinessPressed.png" type="Texture" id=12]
+[ext_resource path="res://Visuales/Stats/IconHappinessHover.png" type="Texture" id=13]
+[ext_resource path="res://Visuales/Stats/IconSocial.png" type="Texture" id=14]
+[ext_resource path="res://Visuales/Stats/IconSocialPressed.png" type="Texture" id=15]
+[ext_resource path="res://Visuales/Stats/IconSocialHover.png" type="Texture" id=16]
+[ext_resource path="res://Visuales/Stats/IconCleaness.png" type="Texture" id=17]
+[ext_resource path="res://Visuales/Stats/IconCleanessPressed.png" type="Texture" id=18]
+[ext_resource path="res://Visuales/Stats/IconCleanessHover.png" type="Texture" id=19]
+[ext_resource path="res://Visuales/Stats/IconFood.png" type="Texture" id=20]
+[ext_resource path="res://Visuales/Stats/IconFoodPressed.png" type="Texture" id=21]
+[ext_resource path="res://Visuales/Stats/IconFoodHover.png" type="Texture" id=22]
+[ext_resource path="res://Visuales/Stats/IconMoney.png" type="Texture" id=23]
+[ext_resource path="res://Visuales/Stats/IconMoneyPressed.png" type="Texture" id=24]
+[ext_resource path="res://Visuales/Stats/IconMoneyHover.png" type="Texture" id=25]
+[ext_resource path="res://Visuales/Uncheck.png" type="Texture" id=26]
+[ext_resource path="res://Escenas/StatEditor.tscn" type="PackedScene" id=27]
+[ext_resource path="res://Visuales/Stats/IconHappinessClean.png" type="Texture" id=28]
+[ext_resource path="res://Visuales/Options/ButtomSmall.png" type="Texture" id=29]
+[ext_resource path="res://Visuales/Options/ButtomSmallPressed.png" type="Texture" id=30]
+[ext_resource path="res://Visuales/Options/ButtomSmallHover.png" type="Texture" id=31]
+[ext_resource path="res://Audio/Soft Mysterious Harp by VWolfdog.ogg" type="AudioStream" id=32]
+
+[sub_resource type="Animation" id=1]
+resource_name = "BackToTitle"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Main:rect_position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, -224 ), Vector2( 0, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Main:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("BGMusic:volume_db")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ -20.0, -10.0 ]
+}
+
+[sub_resource type="Animation" id=2]
+resource_name = "MainToGameConfig"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("GameConfig:rect_position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, -224 ), Vector2( 0, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Main:rect_position")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( 0, 224 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("BGMusic:volume_db")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ -10.0, -20.0 ]
+}
+
+[sub_resource type="Animation" id=3]
+length = 2.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Main:rect_position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( -256, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Tutorial1:rect_position")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 256, 0 ), Vector2( 0, 0 ) ]
+}
+
+[sub_resource type="Animation" id=4]
+resource_name = "StartGame"
+tracks/0/type = "value"
+tracks/0/path = NodePath("GameConfig:rect_position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( 0, 224 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("BGMusic:volume_db")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ -20.0, -80.0 ]
+}
+
+[sub_resource type="Animation" id=5]
+length = 2.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Thanks:rect_position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( -256, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Main:rect_position")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 256, 0 ), Vector2( 0, 0 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("BGMusic:volume_db")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ -15.0, -10.0 ]
+}
+
+[sub_resource type="Animation" id=6]
+length = 2.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Tutorial1:rect_position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( -256, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Tutorial2:rect_position")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 256, 0 ), Vector2( 0, 0 ) ]
+}
+
+[sub_resource type="Animation" id=7]
+length = 3.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Main:rect_position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( -512, 0 ), Vector2( 0, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Tutorial1:rect_position")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( -256, 0 ), Vector2( 256, 0 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Tutorial2:rect_position")
+tracks/2/interp = 2
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( 512, 0 ) ]
+}
+
+[node name="CanvasLayer" type="CanvasLayer"]
+script = ExtResource( 1 )
+
+[node name="Thanks" type="Control" parent="."]
+editor/display_folded = true
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -256.0
+margin_right = -256.0
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Title" type="Label" parent="Thanks"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -128.0
+margin_top = -104.0
+margin_right = 128.0
+margin_bottom = -89.0
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 0.498039, 0.596078, 0.376471, 1 )
+text = "-Gracias por jugar-"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Body" type="Label" parent="Thanks"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -120.0
+margin_top = -80.0
+margin_right = 120.0
+margin_bottom = 72.0
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 0.972549, 0.933333, 0.74902, 1 )
+text = "Como yo, ya debes estar cansado de todo esto.
+Pero tratemos de hacer un esfuercito mas por todos los que lo necesitan y para salir lo mejor posible de esto.
+                               Suerte y mucha fuerza
+							                                                      -Manpacman"
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Options" type="HBoxContainer" parent="Thanks"]
+editor/display_folded = true
+margin_top = 192.0
+margin_right = 256.0
+margin_bottom = 224.0
+rect_min_size = Vector2( 0, 30 )
+custom_constants/separation = 8
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Exit" type="TextureButton" parent="Thanks/Options"]
+margin_left = 4.0
+margin_right = 124.0
+margin_bottom = 32.0
+texture_normal = ExtResource( 3 )
+texture_pressed = ExtResource( 4 )
+texture_hover = ExtResource( 5 )
+texture_disabled = ExtResource( 6 )
+
+[node name="Label" type="Label" parent="Thanks/Options/Exit"]
+margin_left = 6.0
+margin_top = 8.0
+margin_right = 114.0
+margin_bottom = 24.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0.972549, 0.933333, 0.74902, 1 )
+text = "Salir"
+align = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Back" type="TextureButton" parent="Thanks/Options"]
+margin_left = 132.0
+margin_right = 252.0
+margin_bottom = 32.0
+texture_normal = ExtResource( 3 )
+texture_pressed = ExtResource( 4 )
+texture_hover = ExtResource( 5 )
+
+[node name="Label" type="Label" parent="Thanks/Options/Back"]
+margin_left = 6.0
+margin_top = 8.0
+margin_right = 114.0
+margin_bottom = 24.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0.972549, 0.933333, 0.74902, 1 )
+text = "Volver"
+align = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Main" type="Control" parent="."]
+editor/display_folded = true
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = -4.57764e-005
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Title" type="Label" parent="Main"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -74.0
+margin_top = -87.5
+margin_bottom = -72.5
+rect_scale = Vector2( 2, 2 )
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 0.972549, 0.933333, 0.74902, 1 )
+custom_constants/shadow_offset_x = 0
+custom_constants/shadow_offset_y = 0
+text = "Contagious"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Subtitle" type="Label" parent="Main"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -80.0
+margin_top = -58.0
+margin_right = 80.0
+margin_bottom = -43.0
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 0.929412, 0.733333, 0.439216, 1 )
+text = "Historias de cuarentena"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Start" type="TextureButton" parent="Main"]
+editor/display_folded = true
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -60.0
+margin_top = -14.0
+margin_right = 60.0
+margin_bottom = 16.0
+disabled = true
+texture_normal = ExtResource( 3 )
+texture_pressed = ExtResource( 4 )
+texture_hover = ExtResource( 5 )
+texture_disabled = ExtResource( 6 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Label" type="Label" parent="Main/Start"]
+modulate = Color( 0.662745, 0.352941, 0.247059, 1 )
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -48.0
+margin_top = -7.0
+margin_right = 48.0
+margin_bottom = 8.0
+custom_fonts/font = ExtResource( 2 )
+text = "Empezar"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Context" type="TextureButton" parent="Main"]
+editor/display_folded = true
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -60.0
+margin_top = 25.0
+margin_right = 60.0
+margin_bottom = 55.0
+texture_normal = ExtResource( 3 )
+texture_pressed = ExtResource( 4 )
+texture_hover = ExtResource( 5 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Lavel" type="Label" parent="Main/Context"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -48.0
+margin_top = -7.0
+margin_right = 48.0
+margin_bottom = 8.0
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 0.972549, 0.933333, 0.74902, 1 )
+text = "Contexto"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Exit" type="TextureButton" parent="Main"]
+editor/display_folded = true
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -60.0
+margin_top = 64.0
+margin_right = 60.0
+margin_bottom = 94.0
+texture_normal = ExtResource( 3 )
+texture_pressed = ExtResource( 4 )
+texture_hover = ExtResource( 5 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Lavel" type="Label" parent="Main/Exit"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -48.0
+margin_top = -7.0
+margin_right = 48.0
+margin_bottom = 8.0
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 0.972549, 0.933333, 0.74902, 1 )
+text = "Salir"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Tutorial1" type="Control" parent="."]
+editor/display_folded = true
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 256.0
+margin_right = 256.0
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Title" type="Label" parent="Tutorial1"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -128.0
+margin_top = -104.0
+margin_right = 128.0
+margin_bottom = -89.0
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 0.498039, 0.596078, 0.376471, 1 )
+text = "-Situación actual-"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Body" type="Label" parent="Tutorial1"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -120.0
+margin_top = -88.0
+margin_right = 120.0
+margin_bottom = 72.0
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 0.972549, 0.933333, 0.74902, 1 )
+text = "Un nuevo virus se esta propagando a velocidades alarmantes. La recomendación de los espertos es el hacer cuarentena de manera voluntaria. Intenta de ser un ciudadano responsable mientras todo esto pasa.
+Cuida de ti mismo y de los demas mientras dure esta situación."
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Options" type="HBoxContainer" parent="Tutorial1"]
+margin_top = 192.0
+margin_right = 256.0
+margin_bottom = 224.0
+rect_min_size = Vector2( 0, 30 )
+custom_constants/separation = 8
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BackMain" type="TextureButton" parent="Tutorial1/Options"]
+margin_left = 4.0
+margin_right = 124.0
+margin_bottom = 32.0
+texture_normal = ExtResource( 3 )
+texture_pressed = ExtResource( 4 )
+texture_hover = ExtResource( 5 )
+
+[node name="Label" type="Label" parent="Tutorial1/Options/BackMain"]
+margin_left = 6.0
+margin_top = 8.0
+margin_right = 114.0
+margin_bottom = 22.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0.972549, 0.933333, 0.74902, 1 )
+text = "Volver"
+align = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Next" type="TextureButton" parent="Tutorial1/Options"]
+margin_left = 132.0
+margin_right = 252.0
+margin_bottom = 32.0
+texture_normal = ExtResource( 3 )
+texture_pressed = ExtResource( 4 )
+texture_hover = ExtResource( 5 )
+
+[node name="Label" type="Label" parent="Tutorial1/Options/Next"]
+margin_left = 6.0
+margin_top = 8.0
+margin_right = 114.0
+margin_bottom = 24.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0.972549, 0.933333, 0.74902, 1 )
+text = "Siguiente"
+align = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Tutorial2" type="Control" parent="."]
+editor/display_folded = true
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 512.0
+margin_right = 511.999
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Title" type="Label" parent="Tutorial2"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -128.0
+margin_top = -104.0
+margin_right = 128.0
+margin_bottom = -89.0
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 0.498039, 0.596078, 0.376471, 1 )
+text = "-Tus Stats-"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Labels" type="Control" parent="Tutorial2"]
+editor/display_folded = true
+margin_left = 40.0
+margin_top = 32.0
+margin_right = 80.0
+margin_bottom = 72.0
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Instruction" type="Label" parent="Tutorial2/Labels"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -20.0
+margin_top = -20.0
+margin_right = 188.0
+margin_bottom = 121.0
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 0.972549, 0.933333, 0.74902, 1 )
+text = "Has clic en los iconos para saber que representan"
+align = 1
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Health" type="Label" parent="Tutorial2/Labels"]
+visible = false
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -20.0
+margin_top = -20.0
+margin_right = 188.0
+margin_bottom = 121.0
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 0.972549, 0.933333, 0.74902, 1 )
+text = "-Probabilidad de estar sano-
+Sin hacerte una prueba no puedes saber si estas o no contaguiado.
+Esto es solo una estimación dada tus acciones hasta el momento."
+align = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Happiness" type="Label" parent="Tutorial2/Labels"]
+visible = false
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -20.0
+margin_top = -20.0
+margin_right = 188.0
+margin_bottom = 121.0
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 0.972549, 0.933333, 0.74902, 1 )
+text = "-Estado de animo-
+Estar encerrado y preocupandote puede ser malo para tu moral.
+Intenta encarar esta situación de la mejor forma posible.
+Estar deprimido baja tus defensas."
+align = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Social" type="Label" parent="Tutorial2/Labels"]
+visible = false
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -28.0
+margin_top = -20.0
+margin_right = 188.0
+margin_bottom = 121.0
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 0.972549, 0.933333, 0.74902, 1 )
+text = "-Socialización-
+Estar con otras personas es algo complicado en estos momentos, pero un aislamiento total tampoco es bueno para nuestra mente.
+Estar deprimido baja tus defensas."
+align = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Cleaness" type="Label" parent="Tutorial2/Labels"]
+visible = false
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -28.0
+margin_top = -20.0
+margin_right = 188.0
+margin_bottom = 121.0
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 0.972549, 0.933333, 0.74902, 1 )
+text = "-Limpieza-
+Cuidar la higiene propia y de nuestro entorno disminuye drasticamente las posibilidades de terminar contagiado."
+align = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Food" type="Label" parent="Tutorial2/Labels"]
+visible = false
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -28.0
+margin_top = -20.0
+margin_right = 188.0
+margin_bottom = 121.0
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 0.972549, 0.933333, 0.74902, 1 )
+text = "-Raciones de comida-
+Es inportante tener proviciones mientras esto dure.
+Hacer acopio de alimentos es inportante pero tambien lo es la situación en la que lo haces.
+Consume 4 raciones diarias para mantenerte fuerte."
+align = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Money" type="Label" parent="Tutorial2/Labels"]
+visible = false
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -28.0
+margin_top = -20.0
+margin_right = 188.0
+margin_bottom = 121.0
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 0.972549, 0.933333, 0.74902, 1 )
+text = "-Dinero-
+Un buen poder adquisitivo te dara mejores opciones frente a varias situaciones.
+Intenta cuidarlo hasta fin de mes."
+align = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Icons" type="Control" parent="Tutorial2"]
+editor/display_folded = true
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Health" type="TextureButton" parent="Tutorial2/Icons"]
+margin_left = 8.0
+margin_top = 32.0
+margin_right = 26.0
+margin_bottom = 50.0
+texture_normal = ExtResource( 8 )
+texture_pressed = ExtResource( 9 )
+texture_hover = ExtResource( 10 )
+
+[node name="Happiness" type="TextureButton" parent="Tutorial2/Icons"]
+margin_left = 8.0
+margin_top = 56.0
+margin_right = 26.0
+margin_bottom = 74.0
+texture_normal = ExtResource( 11 )
+texture_pressed = ExtResource( 12 )
+texture_hover = ExtResource( 13 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Social" type="TextureButton" parent="Tutorial2/Icons"]
+margin_left = 8.0
+margin_top = 128.0
+margin_right = 26.0
+margin_bottom = 146.0
+texture_normal = ExtResource( 14 )
+texture_pressed = ExtResource( 15 )
+texture_hover = ExtResource( 16 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Cleaness" type="TextureButton" parent="Tutorial2/Icons"]
+margin_left = 8.0
+margin_top = 80.0
+margin_right = 26.0
+margin_bottom = 98.0
+texture_normal = ExtResource( 17 )
+texture_pressed = ExtResource( 18 )
+texture_hover = ExtResource( 19 )
+
+[node name="Food" type="TextureButton" parent="Tutorial2/Icons"]
+margin_left = 8.0
+margin_top = 104.0
+margin_right = 26.0
+margin_bottom = 122.0
+texture_normal = ExtResource( 20 )
+texture_pressed = ExtResource( 21 )
+texture_hover = ExtResource( 22 )
+
+[node name="Money" type="TextureButton" parent="Tutorial2/Icons"]
+margin_left = 8.0
+margin_top = 152.0
+margin_right = 26.0
+margin_bottom = 170.0
+texture_normal = ExtResource( 23 )
+texture_pressed = ExtResource( 24 )
+texture_hover = ExtResource( 25 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Options" type="HBoxContainer" parent="Tutorial2"]
+editor/display_folded = true
+margin_top = 192.0
+margin_right = 256.0
+margin_bottom = 224.0
+rect_min_size = Vector2( 0, 30 )
+custom_constants/separation = 8
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Back" type="TextureButton" parent="Tutorial2/Options"]
+margin_left = 4.0
+margin_right = 124.0
+margin_bottom = 32.0
+texture_normal = ExtResource( 3 )
+texture_pressed = ExtResource( 4 )
+texture_hover = ExtResource( 5 )
+
+[node name="Label" type="Label" parent="Tutorial2/Options/Back"]
+margin_left = 6.0
+margin_top = 8.0
+margin_right = 114.0
+margin_bottom = 22.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0.972549, 0.933333, 0.74902, 1 )
+text = "Anterior"
+align = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BackMain" type="TextureButton" parent="Tutorial2/Options"]
+margin_left = 132.0
+margin_right = 252.0
+margin_bottom = 32.0
+texture_normal = ExtResource( 3 )
+texture_pressed = ExtResource( 4 )
+texture_hover = ExtResource( 5 )
+
+[node name="Label" type="Label" parent="Tutorial2/Options/BackMain"]
+margin_left = 6.0
+margin_top = 8.0
+margin_right = 114.0
+margin_bottom = 24.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0.972549, 0.933333, 0.74902, 1 )
+text = "Volver"
+align = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GameConfig" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -224.0
+margin_bottom = -224.0
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Title" type="Label" parent="GameConfig"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -128.0
+margin_top = -104.0
+margin_right = 128.0
+margin_bottom = -89.0
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 0.498039, 0.596078, 0.376471, 1 )
+text = "-Selecciona tu situación-"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Config" type="VBoxContainer" parent="GameConfig"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -120.0
+margin_top = -82.0
+margin_right = 120.0
+margin_bottom = 68.0
+
+[node name="Infected" type="Control" parent="GameConfig/Config"]
+editor/display_folded = true
+margin_right = 240.0
+margin_bottom = 18.0
+rect_min_size = Vector2( 0, 18 )
+
+[node name="Label" type="Label" parent="GameConfig/Config/Infected"]
+margin_right = 240.0
+margin_bottom = 18.0
+rect_min_size = Vector2( 0, 18 )
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 0.972549, 0.933333, 0.74902, 1 )
+text = "Empezar infectado"
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Checker" type="TextureButton" parent="GameConfig/Config/Infected"]
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = -18.0
+margin_top = -9.0
+margin_bottom = 9.0
+texture_normal = ExtResource( 26 )
+
+[node name="Stat0" parent="GameConfig/Config" instance=ExtResource( 27 )]
+margin_top = 22.0
+margin_bottom = 40.0
+text = "Prob. de estar sano"
+icon = ExtResource( 8 )
+
+[node name="Stat1" parent="GameConfig/Config" instance=ExtResource( 27 )]
+margin_top = 44.0
+margin_bottom = 62.0
+text = "Estado de animo"
+index = 1
+icon = ExtResource( 28 )
+
+[node name="Stat2" parent="GameConfig/Config" instance=ExtResource( 27 )]
+margin_top = 66.0
+margin_bottom = 84.0
+text = "Limpieza"
+index = 2
+icon = ExtResource( 17 )
+
+[node name="Stat3" parent="GameConfig/Config" instance=ExtResource( 27 )]
+margin_top = 88.0
+margin_bottom = 106.0
+text = "Raciones de comida"
+deltaValue = 4
+index = 3
+icon = ExtResource( 20 )
+
+[node name="Stat4" parent="GameConfig/Config" instance=ExtResource( 27 )]
+margin_top = 110.0
+margin_bottom = 128.0
+text = "Socialización"
+index = 4
+icon = ExtResource( 14 )
+
+[node name="Stat5" parent="GameConfig/Config" instance=ExtResource( 27 )]
+margin_top = 132.0
+margin_bottom = 150.0
+text = "Dinero"
+deltaValue = 1000
+index = 5
+icon = ExtResource( 23 )
+
+[node name="Options" type="HBoxContainer" parent="GameConfig"]
+margin_top = 192.0
+margin_right = 256.0
+margin_bottom = 224.0
+rect_min_size = Vector2( 0, 32 )
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Back" type="TextureButton" parent="GameConfig/Options"]
+editor/display_folded = true
+margin_left = 4.0
+margin_right = 84.0
+margin_bottom = 32.0
+texture_normal = ExtResource( 29 )
+texture_pressed = ExtResource( 30 )
+texture_hover = ExtResource( 31 )
+
+[node name="Label" type="Label" parent="GameConfig/Options/Back"]
+margin_left = 6.0
+margin_top = 7.0
+margin_right = 74.0
+margin_bottom = 24.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0.972549, 0.933333, 0.74902, 1 )
+text = "Volver"
+align = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Default" type="TextureButton" parent="GameConfig/Options"]
+editor/display_folded = true
+margin_left = 88.0
+margin_right = 168.0
+margin_bottom = 32.0
+texture_normal = ExtResource( 29 )
+texture_pressed = ExtResource( 30 )
+texture_hover = ExtResource( 31 )
+
+[node name="Label" type="Label" parent="GameConfig/Options/Default"]
+margin_left = 6.0
+margin_top = 7.0
+margin_right = 74.0
+margin_bottom = 24.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0.972549, 0.933333, 0.74902, 1 )
+text = "Default"
+align = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Start" type="TextureButton" parent="GameConfig/Options"]
+editor/display_folded = true
+margin_left = 172.0
+margin_right = 252.0
+margin_bottom = 32.0
+texture_normal = ExtResource( 29 )
+texture_pressed = ExtResource( 30 )
+texture_hover = ExtResource( 31 )
+
+[node name="Label" type="Label" parent="GameConfig/Options/Start"]
+margin_left = 6.0
+margin_top = 7.0
+margin_right = 74.0
+margin_bottom = 24.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0.972549, 0.933333, 0.74902, 1 )
+text = "Empezar"
+align = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/BackToTitle = SubResource( 1 )
+anims/MainToGameConfig = SubResource( 2 )
+anims/MainToTutorial1 = SubResource( 3 )
+anims/StartGame = SubResource( 4 )
+anims/ThanksToMain = SubResource( 5 )
+anims/Tutorial1ToTutorial2 = SubResource( 6 )
+anims/Tutorial2ToMain = SubResource( 7 )
+
+[node name="BGMusic" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 32 )
+volume_db = -10.0
+autoplay = true
+[connection signal="pressed" from="Thanks/Options/Exit" to="." method="ThanksExitPressed"]
+[connection signal="pressed" from="Thanks/Options/Back" to="." method="ThanksBackPressed"]
+[connection signal="pressed" from="Main/Start" to="." method="MainStartPressed"]
+[connection signal="pressed" from="Main/Context" to="." method="MainContextPressed"]
+[connection signal="pressed" from="Main/Exit" to="." method="MainExitPressed"]
+[connection signal="pressed" from="Tutorial1/Options/BackMain" to="." method="Tutorial1VolverPressed"]
+[connection signal="pressed" from="Tutorial1/Options/Next" to="." method="Tutorial1SiguientePressed"]
+[connection signal="pressed" from="Tutorial2/Icons/Health" to="." method="HealthPressed"]
+[connection signal="pressed" from="Tutorial2/Icons/Happiness" to="." method="HappinessPressed"]
+[connection signal="pressed" from="Tutorial2/Icons/Social" to="." method="SocialPressed"]
+[connection signal="pressed" from="Tutorial2/Icons/Cleaness" to="." method="CleanessPressed"]
+[connection signal="pressed" from="Tutorial2/Icons/Food" to="." method="FoodPressed"]
+[connection signal="pressed" from="Tutorial2/Icons/Money" to="." method="MoneyPressed"]
+[connection signal="pressed" from="Tutorial2/Options/Back" to="." method="Tutorial2AnteriorPressed"]
+[connection signal="pressed" from="Tutorial2/Options/BackMain" to="." method="Tutorial2VolverPressed"]
+[connection signal="pressed" from="GameConfig/Config/Infected/Checker" to="." method="InfectedCheckerPressed"]
+[connection signal="valueChange" from="GameConfig/Config/Stat0" to="." method="StatValueChange"]
+[connection signal="valueChange" from="GameConfig/Config/Stat1" to="." method="StatValueChange"]
+[connection signal="valueChange" from="GameConfig/Config/Stat2" to="." method="StatValueChange"]
+[connection signal="valueChange" from="GameConfig/Config/Stat3" to="." method="StatValueChange"]
+[connection signal="valueChange" from="GameConfig/Config/Stat4" to="." method="StatValueChange"]
+[connection signal="valueChange" from="GameConfig/Config/Stat5" to="." method="StatValueChange"]
+[connection signal="pressed" from="GameConfig/Options/Back" to="." method="GameConfigBackPressed"]
+[connection signal="pressed" from="GameConfig/Options/Default" to="." method="GameConfigDefaultPressed"]
+[connection signal="pressed" from="GameConfig/Options/Start" to="." method="GameConfigStartPressed"]
+[connection signal="finished" from="BGMusic" to="." method="_on_BGMusic_finished"]

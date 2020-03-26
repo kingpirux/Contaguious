@@ -1,0 +1,68 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Fuentes/BigFont.tres" type="DynamicFont" id=1]
+[ext_resource path="res://Scripts/StatEditor.gd" type="Script" id=2]
+[ext_resource path="res://Visuales/Minus.png" type="Texture" id=3]
+[ext_resource path="res://Visuales/MinusPressed.png" type="Texture" id=4]
+[ext_resource path="res://Visuales/Plus.png" type="Texture" id=5]
+[ext_resource path="res://Visuales/PlusPressed.png" type="Texture" id=6]
+[ext_resource path="res://Visuales/Uncheck.png" type="Texture" id=7]
+
+[node name="Label" type="Label"]
+margin_right = 240.0
+margin_bottom = 18.0
+rect_min_size = Vector2( 0, 18 )
+custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color = Color( 0.972549, 0.933333, 0.74902, 1 )
+text = "Stat Name"
+autowrap = true
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Minus" type="TextureButton" parent="."]
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = -96.0
+margin_top = -8.0
+margin_right = -78.0
+margin_bottom = 10.0
+texture_normal = ExtResource( 3 )
+texture_pressed = ExtResource( 4 )
+
+[node name="Value" type="Label" parent="."]
+margin_left = 162.0
+margin_right = 222.0
+margin_bottom = 18.0
+rect_min_size = Vector2( 0, 18 )
+custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color = Color( 0.972549, 0.933333, 0.74902, 1 )
+text = "0"
+align = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Plus" type="TextureButton" parent="."]
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = -18.0
+margin_top = -9.0
+margin_bottom = 9.0
+texture_normal = ExtResource( 5 )
+texture_pressed = ExtResource( 6 )
+
+[node name="Icon" type="TextureRect" parent="."]
+margin_left = 126.0
+margin_top = 1.0
+margin_right = 144.0
+margin_bottom = 19.0
+texture = ExtResource( 7 )
+[connection signal="pressed" from="Minus" to="." method="MinusPressed"]
+[connection signal="pressed" from="Plus" to="." method="PlusPressed"]
