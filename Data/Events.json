@@ -4,9 +4,9 @@
     "numberPersonsInvolved" : 1,
     "tag" : ["delivery","comida","amigo"],
     "optionsText": [
-    ["Hacer el pedido ($250)","{nombre} Llega con tu comida. Aunque tardó mucho más de lo esperado, tu pedido está chorreantemente delicioso.", 0,5,-10,25,5,-250,5],
-    ["Comer lo que queda en casa","Revuelves los cajones, la heladera y las bolsas por restos de comida, no es rico, pero servirá.", 0,0,-5,15,0,0,-5],
-    ["Llamar al perro...","Lo conoces desde hace muchos años, pero las épocas de crisis pueden volver a un hombre una bestia... el irritante perro del vecino sufrirá un accidente.", -5,15,-10,25,0,0,2]
+    ["Hacer el pedido ($250)","{nombre} Llega con tu comida. Aunque tardó mucho más de lo esperado, tu pedido está chorreantemente delicioso.", 0,5,-10,50,5,-250,5],
+    ["Comer lo que queda en casa","Revuelves los cajones, la heladera y las bolsas por restos de comida, no es rico, pero servirá.", 0,0,-5,30,0,0,-5],
+    ["Llamar al perro...","Lo conoces desde hace muchos años, pero las épocas de crisis pueden volver a un hombre una bestia... el irritante perro del vecino sufrirá un accidente.", -5,15,-10,60,0,0,2]
     ],
     "desperateTrigger": [-1,-1,-1,-1,-1,249]
   },
@@ -55,13 +55,13 @@
     "desperateTrigger": [-1,-1,-1,-1,-1,15000]
   },
       "006": {
-    "eventText": "El encierro empieza a deprimirte un poco, o quizas estas solo aburrido, el tema es que hacer cada día lo mismo es bastante incomodo ¿qué podríamos hacer para sentir un cambio?",
-    "numberPersonsInvolved": 1,
+    "eventText": "Antes de que el aburrimiento te gobierne, ves que opciones tienes para divertirte.",
+    "numberPersonsInvolved": 3,
     "tag" : ["juego","limpieza","trabajo"],
     "optionsText": [
-    ["Realizar un hobbie.","", 20,0,10,-10,10,15000,15],
-     ["Limpiar la casa.","Es impresionante la cantidad de gente haciendo cola para atenderse de un resfriado... Tras varias personas estornudandote en la cara, llega tu turno. {nombre} te atiende diligentemente. {infectado}", 30,-20,-10,-5,-5,0,15],
-    ["Romper todo.","No tienes tiempo. Si algo aprendiste en esta vida es a sobrevivir por tu cuenta. Sientes que {potencial}, así que lo unico que necesitas es un poco del milagroso GROG.", -30,30,-30,20,-10,0,5]
+    ["Realizar un hobbie.","Decides hacer un video con ese viejo hobbie que tenías, no eras de lo mejor pero hoy en día todos son maestros de sus burbujas, sin esperarlo alguien te hace una donación.", 0,25,-5,0,10,2000,0],
+     ["Limpiar la casa.","Tratas con mucho esfuerzo de que limpiar sea una tarea divertida... lamentablemente no lo es, pero te entretienes redescubriendo lo que la basura te escondia.", 0,-10,30,-5,-10,0,0],
+    ["Hacer una fiesta.","Sin dudarlo tomas el teléfono y llamas a {nombre}, que vienen sin dudarlo. La fiesta fue toda la noche a todo volumen... lástima que a la salida a ellos los metieron presos.", 0,30,-20,0,30,-500,10]
     ],
     "desperateTrigger": [-1,50,-1,-1,-1,-1]
   }
