@@ -56,13 +56,24 @@
   },
       "006": {
     "eventText": "Antes de que el aburrimiento te gobierne, ves que opciones tienes para divertirte.",
-    "numberPersonsInvolved": 3,
+    "numberPersonsInvolved": 7,
     "tag" : ["juego","limpieza","trabajo"],
     "optionsText": [
     ["Realizar un hobbie.","Decides hacer un video con ese viejo hobbie que tenías, no eras de lo mejor pero hoy en día todos son maestros de sus burbujas, sin esperarlo alguien te hace una donación.", 0,25,-5,0,10,2000,0],
      ["Limpiar la casa.","Tratas con mucho esfuerzo de que limpiar sea una tarea divertida... lamentablemente no lo es, pero te entretienes redescubriendo lo que la basura te escondia.", 0,-10,30,-5,-10,0,0],
-    ["Hacer una fiesta.","Sin dudarlo tomas el teléfono y llamas a {nombre}, que vienen sin dudarlo. La fiesta fue toda la noche a todo volumen... lástima que a la salida a ellos los metieron presos.", 0,30,-20,0,30,-500,10]
+    ["Hacer una fiesta.","Sin dudarlo tomas el teléfono y llamas a {nombre}, que vienen al instante. La fiesta fue toda la noche a todo volumen... lástima que a la salida a todos ellos los metieron presos y algunos murieron.", 0,30,-20,0,50,-500,20]
     ],
     "desperateTrigger": [-1,50,-1,-1,-1,-1]
+  },
+         "007": {
+    "eventText": "Rascarse cada parte del cuerpo durante varias horas no fue tan divertido como parecía. La adrenalina contenida durante tanto tiempo quiere salir, quiere estallar. Quieres hacer estallar algo...",
+    "numberPersonsInvolved": 7,
+    "tag" : ["juego","limpieza","trabajo"],
+    "optionsText": [
+    ["Comprar el videojuego más emocionante del mercado.","Decides hacer un video con ese viejo hobbie que tenías, no eras de lo mejor pero hoy en día todos son maestros de sus burbujas, sin esperarlo alguien te hace una donación.", 0,25,-5,0,10,2000,0],
+     ["Practicar aerobox contra tu sombra.","Tratas con mucho esfuerzo de que limpiar sea una tarea divertida... lamentablemente no lo es, pero te entretienes redescubriendo lo que la basura te escondia.", 0,-10,30,-5,-10,0,0],
+    ["Armar una bomba casera y tirarla al vecino.","Sin dudarlo tomas el teléfono y llamas a {nombre}, que vienen al instante. La fiesta fue toda la noche a todo volumen... lástima que a la salida a todos ellos los metieron presos y algunos murieron.", 0,30,-20,0,50,-500,20]
+    ],
+    "desperateTrigger": [-1,20,-1,-1,-1,-1]
   }
 }
