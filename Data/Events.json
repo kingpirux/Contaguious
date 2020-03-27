@@ -1,4 +1,4 @@
-﻿{
+﻿  {
   "001": {
     "eventText": "Tienes un antojo de comida rapida. Podrias pedir una buena hamburguesa por una aplicacion en tu celular y que un delivery te lo traiga",
     "numberPersonsInvolved" : 1,
@@ -57,7 +57,7 @@
       "006": {
     "eventText": "Antes de que el aburrimiento te gobierne, ves que opciones tienes para divertirte.",
     "numberPersonsInvolved": 7,
-    "tag" : ["venta","limpieza","amigos"],
+    "tag" : ["venta","limpieza","amigo"],
     "optionsText": [
     ["Realizar un hobbie.","Decides hacer un video con ese viejo hobbie que tenías, no eras de lo mejor pero hoy en día todos son maestros de sus burbujas, sin esperarlo {nombre} te hacen una donación.", 0,25,-5,0,10,2000,0],
      ["Limpiar la casa.","Tratas con mucho esfuerzo de que limpiar sea una tarea divertida... lamentablemente no lo es, pero te entretienes redescubriendo lo que la basura te escondia.", 0,-10,30,-5,-10,0,0],
@@ -68,7 +68,7 @@
          "007": {
     "eventText": "Rascarse cada parte del cuerpo durante varias horas no fue tan divertido como parecía. La adrenalina contenida durante tanto tiempo quiere salir, quiere estallar. Quieres hacer estallar algo...",
     "numberPersonsInvolved": 1,
-    "tag" : ["juego","limpieza","amigos"],
+    "tag" : ["juego","limpieza","amigo"],
     "optionsText": [
     ["Comprar el videojuego más emocionante del mercado ($2000).","Por fin podrás sentarte sin que nadie te interrumpa y reventar zombies alienigenas psiquicos en el último 'Boom Unlimited'.", 0,25,0,0,0,-2000,0],
     ["Practicar aerobox contra tu sombra.","No sabes si es el encierro, algo que comiste o este deporte no es para ti, pero esa sombra te dejó hecho trizas...", 10,15,-10,-15,-10,0,0],
@@ -79,9 +79,9 @@
         "008": {
     "eventText": "La noche es cruel para aquellos que viven solos y alejados de sus amores, no puedes contener esas ganas de descargar tu furia sexual, tu cuerpo está emocionado solo con la idea de verle pronto.",
     "numberPersonsInvolved": 1,
-    "tag" : ["pareja","familia","amigos"],
+    "tag" : ["pareja","familia","amigo"],
     "optionsText": [
-    ["Invitar a una cena y Meflix algun contacto ($3000).","{nombre} Es alguien que conoces bien, nunca te ha fallado. Llega a tu departamento y pasan una casi romántica velada, casi porque el hecho de la cuarentena lo hace más excitante que amoroso, es solo una noche... claro, Meflix de fondo.", -10,30,-10,-10,20,-3000,10],
+    ["Invitar a una cena y Meflix algun contacto ($3000).","{nombre} nunca te ha fallado. Llega a tu departamento y pasan una casi romántica velada, casi porque el hecho de la cuarentena lo hace más excitante que amoroso, es solo una noche... claro, Meflix de fondo.", -10,30,-10,-10,20,-3000,10],
     ["Mirar algo de pornografía y terminar con esto.","Es gratis y siempre a mano, irónicamente. Recuerdas esa vieja página de cuando eras adolescente, cuando un par de horas en tu habitación parecían cuarentena. Digamos que... sigue funcionando pero no es tan emocionante.", 0,20,-15,-10,-20,0,0],
     ["Invocar un Sucubo.","Esa noche una sombra cubrió tu oscura habitación, tenebrosa, de ojos seductores y conocidos ¿{nombre}? Te despiertas al otro día extasiado ¡ese sueño hace ver el kamasutra como un cuento para niños!", -20,60,-10,0,-10,0,0]
     ],
@@ -90,7 +90,7 @@
         "009": {
     "eventText": "BASTA. ¿porque no hablas? ¡quédate quieta! Ven aquí! Es tu turno para jugar... esa estupida planta, no sabe las reglas... ... el aburrimiento está haciéndote alucinar... ¿qué podría remediarlo?",
     "numberPersonsInvolved": 2,
-    "tag" : ["visita","desconocido","amigos"],
+    "tag" : ["visita","desconocido","amigo"],
     "optionsText": [
     ["Darte todos los gustos ($5000).","Música fuerte, una película clásica que nunca te decepciona, todas las botanas guardadas, una buena cena de frituras bien chorreantes, el ZoZ ese juego online que hace rato no jugabas. Esa noche, será recordada.", -20,50,-20,20,10,-5000,5],
     ["Invitar a tus vecinos a tomar mates.","Los conoces poco. Pero qué mejor que conocer a alguien nuevo para poder odiarlo o amarlo. {nombre} asisten, incluso traen su propio set de mate. Al menos son inteligentes.", 0,25,-10,10,20,0,5],
@@ -99,14 +99,47 @@
     "desperateTrigger": [-1,10,-1,-1,-1,-1]
   },
         "010": {
-    "eventText": "La noche es cruel para aquellos que viven solos y alejados de sus amores, no puedes contener esas ganas de descargar tu furia sexual, tu cuerpo está emocionado solo con la idea de verle pronto.",
-    "numberPersonsInvolved": 1,
-    "tag" : ["pareja","familia","amigos"],
+    "eventText": "Las bolsas de basura se acumulan, los restos de comida chatarra dentro de cajas de comida chatarra ya están desbordadas... Es momento de hacer algo con esto.",
+    "numberPersonsInvolved":3,
+    "tag" : ["pareja","amigo"],
     "optionsText": [
-    ["Invitar a una cena y Meflix algun contacto ($3000).","{nombre} Es alguien que conoces bien, nunca te ha fallado. Llega a tu departamento y pasan una casi romántica velada, casi porque el hecho de la cuarentena lo hace más excitante que amoroso, es solo una noche... claro, Meflix de fondo.", -10,30,-10,-10,20,-3000,10],
-    ["Mirar algo de pornografía y terminar con esto.","Es gratis y siempre a mano, irónicamente. Recuerdas esa vieja página de cuando eras adolescente, cuando un par de horas en tu habitación parecían cuarentena. Digamos que... sigue funcionando pero no es tan emocionante...", 0,20,-15,-10,-20,0,0],
-    ["Invocar un Sucubo.","Es increible todo lo que puede darte internet. La invocación es más sencilla de lo que esperabas. Esa noche una sombra cubrió tu oscura habitación, tenebrosa, de ojos seductores y conocidos ¿{nombre}?. Te despiertas al otro día extasiado ¡ese sueño! te hace ver el kamasutra como un cuento para niños.", -20,60,-10,0,-10,0,0]
+    ["Limpiar todo, juntando hasta el último botón en el suelo.","Es peligroso salir afuera, pero es el mejor momento. Hasta el último botón en el suelo, al bajar te cruzas con tus vecinos haciendo lo mismo pero notas que la unica persona cargando hasta con los dientes eres tu.", 5,-10,30,-10,10,0,10],
+    ["Sacar las bolsas de los sestos.","Es más inteligente sacar solo que moleste, no hay ganas de repasar lo que sirve y lo que no. Al bajar te cruzas con {nombre} que te invitan a tomar unos mates.", 0,5,15,0,5,0,5],
+    ["Prender fuego todo en el balcon.","Es la cantidad necesaria para poder armar el diablo de carnaval y prenderlo fuego. El humo se mete en el departamento y las llamas prenden fuego la ropa de los vecinos {nombre}.", -5,20,20,0,-10,-10,0]
     ],
     "desperateTrigger": [-1,-1,50,-1,-1,-1]
+  },
+        "011": {
+    "eventText": "NOTICIA: La crisis del virus está en aumento. Más paises toman medidas de prevención y cierran las fronteras. Las autoridades recomiendan: NO SALIR, EVITAR CONTACTO FÍSICO Y REALIZARSE ESTUDIOS si es necesario.",
+       "numberPersonsInvolved" : 0,
+    "tag" : ["evento,noticias"],
+    "optionsText": [
+    ["Comprar los viveres antes que empeore la situación ($10000).","Con calma y pensando bien, caminas hasta el mercado más cercano y menos atiborrado. Compras todo lo que es necesario para sobrevivir un par de semanas más.", 0,-10,-5,50,-10,-10000,25],
+    ["Controlar los recursos con lo que se cuentan en el departamento.","Analizas todos tus recursos actuales, no es necesario aún hacer grandes compras a demas que en tu zona aún no hay casos graves. Mejor esperar y hacer lo que sea necesario.", 0,0,0,0,0,0,10],
+    ["Asaltar al chino.","Te pones una máscara y sobre esta un barbijo. Guantes de latex. Te bañas con alcohol en gel para luego envolverte en papel higienico, tomar el arma y asaltar al chino para que nunca te falte nada. Estaba cerrado.", 10,30,30,-10,-10,-1000,20]
+    ],
+    "desperateTrigger": [-1,-1,-1,-1,-1,10000]
+  },
+        "012": {
+    "eventText": "Escuchas afuera una gran conglomeración de gente. Están rodeando un gigantesco totem de madera con el rostro de un dios primigenio. Un grupo toca tu puerta y te invita a pedir clemencia y el pronto regreso de no se qué.",
+       "numberPersonsInvolved" : 3,
+    "tag" : ["evento,religion"],
+    "optionsText": [
+    ["Esconderte para que crean que no estas en el departamento.","Escuchas como golpean. Una. Dos... tres cuatro cinco! antes de irse. Miras por la mirilla, eran {nombre} que al parecer pertenecen ahora a este culto.", 0,-10,0,0,-10,0,15],
+    ["Decirles que se retiren sin abrir la puerta.","Los cultistas insisten en que los acompañes, que solo aquel puede salvarnos de esta enfermedad.{nombre} tiran basura a tu puerta antes de irse enojados.", 0,0,-20,0,0,0,15],
+    ["Acompañarlos.","{nombre} te acmopañan. Bailan bajo la luna desnudos y cubiertos en la sangre de un ¿venado?... El fuego del totem ¿no te quema?... no recuerdas mucho más...", -20,30,-20,-20,30,0,30]
+    ],
+    "desperateTrigger": [-1,20,-1,-1,20,-1]
+  },
+        "013": {
+    "eventText": "El llanto del bebé de tu vecino parece ser cada vez más intenso. Algo claramente no esta bien. Golpeas la pared para tratar de llamar la atención pero no responden. El llanto se intensifica y no sesa en todo el día.",
+     "numberPersonsInvolved" : 1,
+    "tag" : ["emergencia,visita"],
+    "optionsText": [
+    ["Llamar a emergencias.","No conoces mucho al bebe {nombre}, pero era tranquilo. Al llegar la policía descubren que el bebé fue abandonado y sus padres desaparecidos.", 0,-15,0,0,10,0,-10],
+    ["Visitar al vecino para averiguar qué pasa.","Golpeas su puerta y notas que está abierta, dentro te encuentras con el bebé {nombre}, hace tiempo que sus padres no estan en casa, lo alimentas como puedes y lo llevas a la policía.", 0,-10,-10,-10,15,-500,-5],
+    ["Gritar más fuerte y golpear la pared con más ímpetu.","Golpeas, gritas y lloras con tanta fuerza que desgarra tu garganta, el bebé parece callarse después de un tiempo. Tus paredes estan marcadas con sangre de tus puños.", -10,20,-10,-10,-10,-500,5]
+    ],
+    "desperateTrigger": [-1,20,-1,-1,-1,-1]
   }
 }
