@@ -57,9 +57,9 @@
       "006": {
     "eventText": "Antes de que el aburrimiento te gobierne, ves que opciones tienes para divertirte.",
     "numberPersonsInvolved": 7,
-    "tag" : ["juego","limpieza","trabajo"],
+    "tag" : ["venta","limpieza","amigos"],
     "optionsText": [
-    ["Realizar un hobbie.","Decides hacer un video con ese viejo hobbie que tenías, no eras de lo mejor pero hoy en día todos son maestros de sus burbujas, sin esperarlo alguien te hace una donación.", 0,25,-5,0,10,2000,0],
+    ["Realizar un hobbie.","Decides hacer un video con ese viejo hobbie que tenías, no eras de lo mejor pero hoy en día todos son maestros de sus burbujas, sin esperarlo {nombre} te hacen una donación.", 0,25,-5,0,10,2000,0],
      ["Limpiar la casa.","Tratas con mucho esfuerzo de que limpiar sea una tarea divertida... lamentablemente no lo es, pero te entretienes redescubriendo lo que la basura te escondia.", 0,-10,30,-5,-10,0,0],
     ["Hacer una fiesta.","Sin dudarlo tomas el teléfono y llamas a {nombre}, que vienen al instante. La fiesta fue toda la noche a todo volumen... lástima que a la salida a todos ellos los metieron presos y algunos murieron.", 0,30,-20,0,50,-500,20]
     ],
@@ -67,13 +67,46 @@
   },
          "007": {
     "eventText": "Rascarse cada parte del cuerpo durante varias horas no fue tan divertido como parecía. La adrenalina contenida durante tanto tiempo quiere salir, quiere estallar. Quieres hacer estallar algo...",
-    "numberPersonsInvolved": 7,
-    "tag" : ["juego","limpieza","trabajo"],
+    "numberPersonsInvolved": 1,
+    "tag" : ["juego","limpieza","amigos"],
     "optionsText": [
-    ["Comprar el videojuego más emocionante del mercado.","Decides hacer un video con ese viejo hobbie que tenías, no eras de lo mejor pero hoy en día todos son maestros de sus burbujas, sin esperarlo alguien te hace una donación.", 0,25,-5,0,10,2000,0],
-     ["Practicar aerobox contra tu sombra.","Tratas con mucho esfuerzo de que limpiar sea una tarea divertida... lamentablemente no lo es, pero te entretienes redescubriendo lo que la basura te escondia.", 0,-10,30,-5,-10,0,0],
-    ["Armar una bomba casera y tirarla al vecino.","Sin dudarlo tomas el teléfono y llamas a {nombre}, que vienen al instante. La fiesta fue toda la noche a todo volumen... lástima que a la salida a todos ellos los metieron presos y algunos murieron.", 0,30,-20,0,50,-500,20]
+    ["Comprar el videojuego más emocionante del mercado ($2000).","Por fin podrás sentarte sin que nadie te interrumpa y reventar zombies alienigenas psiquicos en el último 'Boom Unlimited'.", 0,25,0,0,0,-2000,0],
+    ["Practicar aerobox contra tu sombra.","No sabes si es el encierro, algo que comiste o este deporte no es para ti, pero esa sombra te dejó hecho trizas...", 10,15,-10,-15,-10,0,0],
+    ["Armar una bomba casera y tirarla al vecino.","No te toma mucho tiempo y tienes casi todos los ingredientes. La armas detalladamente y escribes 'púdrete {nombre}' en la tapa, el fuego y los gritos de agonía te reconfortan de alguna manera.", 0,30,-10,0,-10,-500,5]
     ],
     "desperateTrigger": [-1,20,-1,-1,-1,-1]
+  },
+        "008": {
+    "eventText": "La noche es cruel para aquellos que viven solos y alejados de sus amores, no puedes contener esas ganas de descargar tu furia sexual, tu cuerpo está emocionado solo con la idea de verle pronto.",
+    "numberPersonsInvolved": 1,
+    "tag" : ["pareja","familia","amigos"],
+    "optionsText": [
+    ["Invitar a una cena y Meflix algun contacto ($3000).","{nombre} Es alguien que conoces bien, nunca te ha fallado. Llega a tu departamento y pasan una casi romántica velada, casi porque el hecho de la cuarentena lo hace más excitante que amoroso, es solo una noche... claro, Meflix de fondo.", -10,30,-10,-10,20,-3000,10],
+    ["Mirar algo de pornografía y terminar con esto.","Es gratis y siempre a mano, irónicamente. Recuerdas esa vieja página de cuando eras adolescente, cuando un par de horas en tu habitación parecían cuarentena. Digamos que... sigue funcionando pero no es tan emocionante.", 0,20,-15,-10,-20,0,0],
+    ["Invocar un Sucubo.","Esa noche una sombra cubrió tu oscura habitación, tenebrosa, de ojos seductores y conocidos ¿{nombre}? Te despiertas al otro día extasiado ¡ese sueño hace ver el kamasutra como un cuento para niños!", -20,60,-10,0,-10,0,0]
+    ],
+    "desperateTrigger": [-1,-1,-1,-1,20,-1]
+  },
+        "009": {
+    "eventText": "BASTA. ¿porque no hablas? ¡quédate quieta! Ven aquí! Es tu turno para jugar... esa estupida planta, no sabe las reglas... ... el aburrimiento está haciéndote alucinar... ¿qué podría remediarlo?",
+    "numberPersonsInvolved": 2,
+    "tag" : ["visita","desconocido","amigos"],
+    "optionsText": [
+    ["Darte todos los gustos ($5000).","Música fuerte, una película clásica que nunca te decepciona, todas las botanas guardadas, una buena cena de frituras bien chorreantes, el ZoZ ese juego online que hace rato no jugabas. Esa noche, será recordada.", -20,50,-20,20,10,-5000,5],
+    ["Invitar a tus vecinos a tomar mates.","Los conoces poco. Pero qué mejor que conocer a alguien nuevo para poder odiarlo o amarlo. {nombre} asisten, incluso traen su propio set de mate. Al menos son inteligentes.", 0,25,-10,10,20,0,5],
+    ["Enseñarle a jugar a los muebles.","¿a quién le importa? A la planta seguro que no. Señor sillón frunce el ceño - Planta está verde para estas cosas - Tiene razón, pobre planta, ¿Repisa qué opina? Cierto, se suicidó antes de ayer, saltó por el balcón.", -20,60,-10,0,-10,0,0]
+    ],
+    "desperateTrigger": [-1,10,-1,-1,-1,-1]
+  },
+        "010": {
+    "eventText": "La noche es cruel para aquellos que viven solos y alejados de sus amores, no puedes contener esas ganas de descargar tu furia sexual, tu cuerpo está emocionado solo con la idea de verle pronto.",
+    "numberPersonsInvolved": 1,
+    "tag" : ["pareja","familia","amigos"],
+    "optionsText": [
+    ["Invitar a una cena y Meflix algun contacto ($3000).","{nombre} Es alguien que conoces bien, nunca te ha fallado. Llega a tu departamento y pasan una casi romántica velada, casi porque el hecho de la cuarentena lo hace más excitante que amoroso, es solo una noche... claro, Meflix de fondo.", -10,30,-10,-10,20,-3000,10],
+    ["Mirar algo de pornografía y terminar con esto.","Es gratis y siempre a mano, irónicamente. Recuerdas esa vieja página de cuando eras adolescente, cuando un par de horas en tu habitación parecían cuarentena. Digamos que... sigue funcionando pero no es tan emocionante...", 0,20,-15,-10,-20,0,0],
+    ["Invocar un Sucubo.","Es increible todo lo que puede darte internet. La invocación es más sencilla de lo que esperabas. Esa noche una sombra cubrió tu oscura habitación, tenebrosa, de ojos seductores y conocidos ¿{nombre}?. Te despiertas al otro día extasiado ¡ese sueño! te hace ver el kamasutra como un cuento para niños.", -20,60,-10,0,-10,0,0]
+    ],
+    "desperateTrigger": [-1,-1,50,-1,-1,-1]
   }
 }
