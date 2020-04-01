@@ -2,7 +2,7 @@
   "001": {
     "eventText": "Tienes un antojo de comida rapida. Podrias pedir una buena hamburguesa por una aplicacion en tu celular y que un delivery te lo traiga",
     "numberPersonsInvolved" : 1,
-    "tag" : ["delivery","comida","amigo"],
+    "tag" : ["delivery","comida"],
     "optionsText": [
     ["Hacer el pedido ($250)","{nombre} Llega con tu comida. Aunque tardó mucho más de lo esperado, tu pedido está chorreantemente delicioso.", 0,5,-10,50,5,-250,5],
     ["Comer lo que queda en casa","Revuelves los cajones, la heladera y las bolsas por restos de comida, no es rico, pero servirá.", 0,0,-5,30,0,0,-5],
@@ -13,7 +13,7 @@
 "002": {
     "eventText": "Tocan a tu puerta con un rítmico golpeteo, miras por la mirilla y ves a 4 personas sonrientes.",
     "numberPersonsInvolved" : 4,
-    "tag" : ["visita","religion","desconocido"],
+    "tag" : ["visita","religion"],
     "optionsText": [
     ["Abrir la puerta.","{nombre} se emocionan y se adelantan hacia ti hasta una distancia incomoda. Luego de una hora de hablarte sobre su religión 'Primigenia' te dejan un panfleto y se retiran.", 0,-10,0,25,0,0,10],
      ["Decirles que se vallan.","Los ves enojarse y dibujar un extraño símbolo en el aire antes de irse.", 0,0,0,-10,0,0,-5],
@@ -56,7 +56,7 @@
   },
       "006": {
     "eventText": "Antes de que el aburrimiento te gobierne, ves que opciones tienes para divertirte.",
-    "numberPersonsInvolved": 7,
+    "numberPersonsInvolved": 4,
     "tag" : ["venta","limpieza","amigo"],
     "optionsText": [
     ["Realizar un hobbie.","Decides hacer un video con ese viejo hobbie que tenías, no eras de lo mejor pero hoy en día todos son maestros de sus burbujas, sin esperarlo {nombre} te hacen una donación.", 0,25,-5,0,10,2000,0],
@@ -68,7 +68,7 @@
          "007": {
     "eventText": "Rascarse cada parte del cuerpo durante varias horas no fue tan divertido como parecía. La adrenalina contenida durante tanto tiempo quiere salir, quiere estallar. Quieres hacer estallar algo...",
     "numberPersonsInvolved": 1,
-    "tag" : ["juego","limpieza","amigo"],
+    "tag" : ["juego","amigo"],
     "optionsText": [
     ["Comprar el videojuego más emocionante del mercado ($2000).","Por fin podrás sentarte sin que nadie te interrumpa y reventar zombies alienigenas psiquicos en el último 'Boom Unlimited'.", 0,25,0,0,0,-2000,0],
     ["Practicar aerobox contra tu sombra.","No sabes si es el encierro, algo que comiste o este deporte no es para ti, pero esa sombra te dejó hecho trizas...", 10,15,-10,-15,-10,0,0],
@@ -79,7 +79,7 @@
         "008": {
     "eventText": "La noche es cruel para aquellos que viven solos y alejados de sus amores, no puedes contener esas ganas de descargar tu furia sexual, tu cuerpo está emocionado solo con la idea de verle pronto.",
     "numberPersonsInvolved": 1,
-    "tag" : ["pareja","familia","amigo"],
+    "tag" : ["pareja","amigo"],
     "optionsText": [
     ["Invitar a una cena y Meflix algun contacto ($3000).","{nombre} nunca te ha fallado. Llega a tu departamento y pasan una casi romántica velada, casi porque el hecho de la cuarentena lo hace más excitante que amoroso, es solo una noche... claro, Meflix de fondo.", -10,30,-10,-10,20,-3000,10],
     ["Mirar algo de pornografía y terminar con esto.","Es gratis y siempre a mano, irónicamente. Recuerdas esa vieja página de cuando eras adolescente, cuando un par de horas en tu habitación parecían cuarentena. Digamos que... sigue funcionando pero no es tan emocionante.", 0,20,-15,-10,-20,0,0],
@@ -90,7 +90,7 @@
         "009": {
     "eventText": "BASTA. ¿porque no hablas? ¡quédate quieta! Ven aquí! Es tu turno para jugar... esa estupida planta, no sabe las reglas... ... el aburrimiento está haciéndote alucinar... ¿qué podría remediarlo?",
     "numberPersonsInvolved": 2,
-    "tag" : ["visita","desconocido","amigo"],
+    "tag" : ["juego","amigo"],
     "optionsText": [
     ["Darte todos los gustos ($5000).","Música fuerte, una película clásica que nunca te decepciona, todas las botanas guardadas, una buena cena de frituras bien chorreantes, el ZoZ ese juego online que hace rato no jugabas. Esa noche, será recordada.", -20,50,-20,20,10,-5000,5],
     ["Invitar a tus vecinos a tomar mates.","Los conoces poco. Pero qué mejor que conocer a alguien nuevo para poder odiarlo o amarlo. {nombre} asisten, incluso traen su propio set de mate. Al menos son inteligentes.", 0,25,-10,10,20,0,5],
@@ -141,5 +141,28 @@
     ["Gritar más fuerte y golpear la pared con más ímpetu.","Golpeas, gritas y lloras con tanta fuerza que desgarra tu garganta, el bebé parece callarse después de un tiempo. Tus paredes estan marcadas con sangre de tus puños.", -10,20,-10,-10,-10,-500,5]
     ],
     "desperateTrigger": [-1,20,-1,-1,-1,-1]
+  },
+        "014": {
+    "eventText": "Golpean tu puerta, una mujer con un niño en brazos, barbijo y una canasta, esta ofreciendo sus servicios de limpieza. Te explica entusastamente que necesita comida para alimentar a su hijo.",
+     "numberPersonsInvolved" : 1,
+    "tag" : ["limpieza,visita"],
+    "optionsText": [
+    ["Contratarla y pagarle con comida para limpiar solo el living, no quieres a alguien mucho tiempo.","La mujer trabaja diligentemente y está bien equipada, se presenta como {nombre}, agradece mucho la oportunidad y deja tu living como si no fuera tuyo en poco tiempo...", 5,0,20,-10,10,0,10],
+    ["Darle la comida pero no dejarle entrar. La limpieza puede esperar, no estas acostumbrado a dejar entrar extraños a tu casa asi como asi.","El bebe llora y la mujer te mira con agradecimiento, hace una reverencia y se retira. Te pones a pensar que quizás sí necesites limpiar un poco así que aprovechas la inspiración para hacerlo tu mismo.", 0,0,15,-10,-10,0,-5],
+    ["Sin pensarlo abres la puerta con cuidado, para que vea la pocilga en la que vives. Le pagarás con gusto si puede con esto.","La mujer deja al niño en la puerta, es más seguro que allí dentro. Saca unos guantes gruesos, una máscara de gas, un tanque de alcohol en gel y un lanzallamas. El metodo no era esperado pero el restultado te satisface.", -10,0,50,-25,10,-1500,5]
+    ],
+    "desperateTrigger": [-1,-1,10,-1,-1,-1]
+  }
+     ,
+        "014": {
+    "eventText": "Una gran cantidad de trastos, cositos del coso, pupitos del chirimbulo y otros objetos curiosos estan ocupando gran parte del pequeño almacen. Habria que limpiar para poder volver a poner la basura que tienes en el resto de la casa.",
+     "numberPersonsInvolved" : 0,
+    "tag" : ["limpieza,visita"],
+    "optionsText": [
+    ["Contratarla y pagarle con comida para limpiar solo el living, no quieres a alguien mucho tiempo.","La mujer trabaja diligentemente y está bien equipada, se presenta como {nombre}, agradece mucho la oportunidad y deja tu living como si no fuera tuyo en poco tiempo...", 5,0,20,-10,10,0,10],
+    ["Darle la comida pero no dejarle entrar. La limpieza puede esperar, no estas acostumbrado a dejar entrar extraños a tu casa asi como asi.","El bebe llora y la mujer te mira con agradecimiento, hace una reverencia y se retira. Te pones a pensar que quizás sí necesites limpiar un poco así que aprovechas la inspiración para hacerlo tu mismo.", 0,0,15,-10,-10,0,-5],
+    ["Sin pensarlo abres la puerta con cuidado, para que vea la pocilga en la que vives. Le pagarás con gusto si puede con esto.","La mujer deja al niño en la puerta, es más seguro que allí dentro. Saca unos guantes gruesos, una máscara de gas, un tanque de alcohol en gel y un lanzallamas. El metodo no era esperado pero el restultado te satisface.", -10,0,50,-25,10,-1500,5]
+    ],
+    "desperateTrigger": [-1,-1,25,-1,-1,-1]
   }
 }
