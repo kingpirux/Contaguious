@@ -129,7 +129,7 @@
     ["Decirles que se retiren sin abrir la puerta.","Los cultistas insisten en que los acompañes, que solo aquel puede salvarnos de esta enfermedad.{nombre} tiran basura a tu puerta antes de irse enojados.", 0,0,-20,0,0,0,15],
     ["Acompañarlos.","{nombre} te acmopañan. Bailan bajo la luna desnudos y cubiertos en la sangre de un ¿venado?... El fuego del totem ¿no te quema?... no recuerdas mucho más...", -20,30,-20,-20,30,0,30]
     ],
-    "desperateTrigger": [-1,20,-1,-1,20,-1]
+    "desperateTrigger": [-1,-1,-1,-1,20,-1]
   },
         "013": {
     "eventText": "El llanto del bebé de tu vecino parece ser cada vez más intenso. Algo claramente no esta bien. Golpeas la pared para tratar de llamar la atención pero no responden. El llanto se intensifica y no sesa en todo el día.",
@@ -152,17 +152,72 @@
     ["Sin pensarlo abres la puerta con cuidado, para que vea la pocilga en la que vives. Le pagarás con gusto si puede con esto.","La mujer deja al niño en la puerta, es más seguro que allí dentro. Saca unos guantes gruesos, una máscara de gas, un tanque de alcohol en gel y un lanzallamas. El metodo no era esperado pero el restultado te satisface.", -10,0,50,-25,10,-1500,5]
     ],
     "desperateTrigger": [-1,-1,10,-1,-1,-1]
-  }
-     ,
-        "014": {
+  },
+        "015": {
     "eventText": "Una gran cantidad de trastos, cositos del coso, pupitos del chirimbulo y otros objetos curiosos estan ocupando gran parte del pequeño almacen. Habria que limpiar para poder volver a poner la basura que tienes en el resto de la casa.",
      "numberPersonsInvolved" : 0,
-    "tag" : ["limpieza,visita"],
+    "tag" : ["trabajo,basurero"],
     "optionsText": [
-    ["Contratarla y pagarle con comida para limpiar solo el living, no quieres a alguien mucho tiempo.","La mujer trabaja diligentemente y está bien equipada, se presenta como {nombre}, agradece mucho la oportunidad y deja tu living como si no fuera tuyo en poco tiempo...", 5,0,20,-10,10,0,10],
-    ["Darle la comida pero no dejarle entrar. La limpieza puede esperar, no estas acostumbrado a dejar entrar extraños a tu casa asi como asi.","El bebe llora y la mujer te mira con agradecimiento, hace una reverencia y se retira. Te pones a pensar que quizás sí necesites limpiar un poco así que aprovechas la inspiración para hacerlo tu mismo.", 0,0,15,-10,-10,0,-5],
-    ["Sin pensarlo abres la puerta con cuidado, para que vea la pocilga en la que vives. Le pagarás con gusto si puede con esto.","La mujer deja al niño en la puerta, es más seguro que allí dentro. Saca unos guantes gruesos, una máscara de gas, un tanque de alcohol en gel y un lanzallamas. El metodo no era esperado pero el restultado te satisface.", -10,0,50,-25,10,-1500,5]
+    ["Catalogar todo y ponerlo en venta por internet. Es un trabajo denso pero puede traer sus beneficios.","La basura de unos es el tesoro de otros. No pasó mucho tiempo que alguien te contacta interesado por el repuesto de motor, esas cosas que tenias marcadas como 'corocolo de la heladera'.", 0,-20,30,-10,0,10000,0],
+    ["Meter todo en una bolsa con los ojos cerrados. Dentro de tí sabes bien que no quieres tirar nada, pero es necesario.","Con gran dolor tiras todo, sin discriminar, de todas formas llevaban años juntando polvo. Entre tantas porquerias, algunos recuerdos empiezan a brotar, esos los guardas esperando otra oportunidad.", 0,-10,20,0,0,0,-5],
+    ["Apretar todo en un rincón para que entren más. Nada que un poco de fuerza y experiencia en tetris no solucione.","Como un gigantesco rompecabezas 3D, acomodas todo de tal forma que el espacio molecular entre la basura ahora está acumulado y da la sensación de tener más espacio.", 0,20,10,-10,0,0,5]
     ],
     "desperateTrigger": [-1,-1,25,-1,-1,-1]
+  },
+        "016": {
+    "eventText": "Haces un repaso de los materiales de limpieza e higiene. Notas que el papel higienico se está acabando. En un departamento donde el agua del bidet suele fallar y la comida chatarra sobrar, es un artilugio más que preciado.",
+     "numberPersonsInvolved" : 2,
+    "tag" : ["basurero,mercado"],
+    "optionsText": [
+    ["Caminar hasta el mercado y comprar todo lo necesario. Aún es horario de comercio habilitado, así que no debería haber tanta gente ($2000).","El pueblo parece una historia de terror, vacío y silencioso. Llegas al mercado donde {nombre} te atiende con un traje antibacterial completo. Compras tus cosas y vuelves a tu casa, tu trasero está a salvo.", -10,0,30,0,15,-2000,10],
+    ["Usar el papel de cocina, arreglar el bidet y comer mejor durante unos días.","Te pones objetivos a corto plazo para que el papel higienico no sea tan importante, hay muchas formas de reemplazarlo. Cuesta mucho, pero en poco tiempo tu salud y tu trasero te lo agradecerán.", 10,-15,20,-10,-10,0,-5],
+    ["Esto es una emergencia. Estamos en pandemia, ningún recurso debe darse por dado. Tomar la escopeta e ir al mercado.","Entras enérgicamente al mercado y apuntas en la cabeza a {nombre}. Exiges que dos carritos completos de papel higienico. La policía ocupada con los reveldes de la cuarentena permiten volver el botin tranquilo a casa.", -10,20,20,-20,-20,0,15]
+    ],
+    "desperateTrigger": [-1,-1,50,-1,-1,2000]
+  },
+        "017": {
+    "eventText": "La hora de comer ha llegado y solo cuentas con galletas humedas, pan seco y torrejas viejas. No estas en condiciones de volver a exigir a tu cuerpo digerir estas cosas en ese estado. Pensemos soluciones.",
+     "numberPersonsInvolved" : 1,
+    "tag" : ["cheff,amigo"],
+    "optionsText": [
+    ["Pedirle al vecino que te invite esta comida, la próxima va por tu cuenta.","El vecino, {nombre}, te mira algo descontento pero te deja pasar. No se caen muy bien, pero en epocas de crisis es mejor tener deudores que deudas. Llenas tu estomago y vuelves contento.", 0,-10,0,30,10,0,10],
+    ["Experimentar con la cocina. Tus años de vivir solo te han dado las herramientas, hora de ponerlas en práctica.","Mezclas, zasonas, revuelves, salas, fritas y pruebas. Claramente que tu cuerpo necesitará reponer nutrientes, pero esto alcanza para convencerlo de que estamos bien.", -15,10,-15,30,-10,0,0],
+    ["Pedirle al vecino que venga a comer. Dicen que sabe a pollo.","{nombre} está en una situación parecida. Débil y fácil de engañar entra a tu casa. Lo atas y le explicas que serás cuidadoso, que dolerá poco, de esa forma durará varios días. La carne humana sabe a pollo.", -10,20,20,-20,-20,0,15]
+    ],
+    "desperateTrigger": [-1,-1,-1,10,-1,0]
+  },
+             "018": {
+    "eventText": "Tu estomago y tu mente necesitan combustible para continuar. Hace rato que estas racionando, pero quizás hoy podrías darte un lujo, ese plus de energía para continuar durante la semana.",
+     "numberPersonsInvolved" : 0,
+    "tag" : ["cheff,juego"],
+    "optionsText": [
+    ["Consumir los últimos frascos de conservas en una rica comida salteada.","Esta es la receta de la abuela, no hay forma que falle pero jamás será igual a la de ella. Esperemos poder salir a comprar comida pronto porque no dejaste ni migas en el plato.", 0,0,-20,40,-20,0,0],
+    ["Contenerse y comer lo justo y necesario. Estamos con ganas pero no se sabe cuando termina.","Tu cuerpo te pide más, pero sabes que el problema de la cuarentena no tiene un final fijo. Prefieres darte un pequeño gusto saboreando el vinagre de las conservas.", 0,-10,0,25,-10,0,0],
+    ["Comer hasta estar lleno. La cuarentena no es el problema, el problema es no disfrutar el tiempo en ella.","Te preparas un banquete para 10 personas y comes hasta estallar. Esperas la digestion y sigues comiendo. Vomitas y vuelves con espacio para el postre. El hambre es una opción... la de mañana quizás.", -15,30,-25,50,0,0,5]
+    ],
+    "desperateTrigger": [-1,-1,-1,25,-1,0]
+  },
+             "019": {
+    "eventText": "Un tentempie para continuar el día con entusiasmo. Un gustito con lo que venias guardando... oh... no lo guardaste, habrá que ir a comprar papas en tubo.",
+     "numberPersonsInvolved" : 1,
+    "tag" : ["trabajo,mercado"],
+    "optionsText": [
+    ["Comprar papas en tubo La Tarde. Esas deliciosas papitas crujientes que no llenan, pero que alimentan el alma. ($350)","El del supermercado, {nombre} te reconoce y te prepara 3 tubos para tener para toda la semana... bueno parte de la semana, te bajaste un tubo completo en el camino.", 0,25,0,25,10,-350,5],
+    ["Son solo papas. Podemos hacer papas fritas, los tuberculos que guardabas debajo de la bacha estan crecidos, con raices, pero sirven.","Preparas un abuena tanda de papas fritas para acompañar con una pelicula. No es un tentempie, pero al menos lo disfrutas y te ahorras la cena.", -5,0,-10,25,-10,0,0],
+    ["Comprarlas a toda costa. No importa el precio, tu cuerpo fue creado para absorber papas en tubo, no para contenerse.","Pides que te den las papas a cualquier precio. En el mercado {nombre} te mira con atención. A cambio de un par de tubos terminas limpiando hinodoros, pisos y vidrieras, pero el placer de las papas en tubo lo valen.", -15,20,-10,20,-10,0,5]
+    ],
+    "desperateTrigger": [-1,-1,-1,-1,-1,300]
+  },
+             "020": {
+    "eventText": "La pandemia se ha descontrolado. Los paises de todo el mundo están en acción buscando una cura. La policía sale a las calles llevándose a quienes estén incumpliendo la cuarentena. ¿Qué nos espera?...",
+     "numberPersonsInvolved" : 3,
+    "tag" : ["familia,emergencia"],
+    "optionsText": [
+    ["Decides tomartelo con calma. Un té relajante y cortar con la televisión por un tiempo sería lo mejor.","De todas formas no saldrías de la casa. Tienes todo lo que necesitas... por ahora...", -20,-20,0,0,-20,0,15],
+    ["Contactar a tus familiares para saber si están bien. No sabes de ellos de hace tiempo.","{nombre} parecen estar bien. En sus ciudades la situación parece no ser mejor. Esperas que pronto se acabe para poder verlos.", -15,-15,0,0,-10,-1000,10],
+    ["¿Será momento de entrar en pánico?. Yo creo que sí. Debo ir por mi familia...","Llegas con {nombre}, te gritan que estas loco por no comer bien. Solo hizo falta mostrarles al tio para que te entiendan, tu escopeta siempre fue tu pariente preferido.", -25,20,-10,0,20,0,25]
+    ],
+    "desperateTrigger": [-1,-1,-1,20,-1,-1]
   }
+     
 }
