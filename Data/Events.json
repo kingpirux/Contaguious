@@ -1,4 +1,4 @@
-﻿  {
+{
   "001": {
     "eventText": "Tienes un antojo de comida rapida. Podrias pedir una buena hamburguesa por una aplicacion en tu celular y que un delivery te lo traiga",
     "numberPersonsInvolved" : 1,
@@ -156,7 +156,7 @@
         "015": {
     "eventText": "Una gran cantidad de trastos, cositos del coso, pupitos del chirimbulo y otros objetos curiosos estan ocupando gran parte del pequeño almacen. Habria que limpiar para poder volver a poner la basura que tienes en el resto de la casa.",
      "numberPersonsInvolved" : 0,
-    "tag" : ["trabajo,basurero"],
+    "tag" : ["venta,basurero"],
     "optionsText": [
     ["Catalogar todo y ponerlo en venta por internet. Es un trabajo denso pero puede traer sus beneficios.","La basura de unos es el tesoro de otros. No pasó mucho tiempo que alguien te contacta interesado por el repuesto de motor, esas cosas que tenias marcadas como 'corocolo de la heladera'.", 0,-20,30,-10,0,10000,0],
     ["Meter todo en una bolsa con los ojos cerrados. Dentro de tí sabes bien que no quieres tirar nada, pero es necesario.","Con gran dolor tiras todo, sin discriminar, de todas formas llevaban años juntando polvo. Entre tantas porquerias, algunos recuerdos empiezan a brotar, esos los guardas esperando otra oportunidad.", 0,-10,20,0,0,0,-5],
@@ -218,6 +218,50 @@
     ["¿Será momento de entrar en pánico?. Yo creo que sí. Debo ir por mi familia...","Llegas con {nombre}, te gritan que estas loco por no comer bien. Solo hizo falta mostrarles al tio para que te entiendan, tu escopeta siempre fue tu pariente preferido.", -25,20,-10,0,20,0,25]
     ],
     "desperateTrigger": [-1,-1,-1,20,-1,-1]
+  },
+             "021": {
+    "eventText": "La cuarentena pueden ser vacaciones para unos y la muerte económica para otros, pero no para ti, trabajador a distancia, tienes una serie de proyectos y trabajos esperándote.",
+     "numberPersonsInvolved" : 2,
+    "tag" : ["trabajo,venta"],
+    "optionsText": [
+    ["Si todos están de vacaciones, ¿porqué tu no? Se aprovechan de estos tiempos para enviarte trabajo extra a la misma paga, mejor descanzar unos días.", "Les respondes que estas muy atariado. No tiene sentido estresarse porque sabes que no lo apreciarán, para ellos tu estas igual de osioso.", 15,20,0,0,-15,-1000,0],
+    ["No hacer el trabajo sólo lo acumula.","{nombre} Te envían una lista de correcciones absurda, completas todotrabajando día y noche para recibir el pago cuanto antes.", 5,-15,0,0,15,5000,0],
+    ["Es tu momento de brillar. Decides decirle sí a cualquier pedido, trabajo, consulta y petición que involucre una sustancial suma de dinero.","Vomitas del cansancio y el dolor de cabeza de tanto trabajo, ¡pero hasta esas fotos indecorosas tuyas se están vendiendo como pan caliente!", -25,0,-15,-10,30,15000,5]
+    ],
+    "desperateTrigger": [-1,25,-1,-1,-1,5000]
+  },
+             "022": {
+    "eventText": "Las redes sociales son un buen lugar para poder explotar tus conocimientos y aprender cosas nuevas. Algunos video tutoriales podrían ayudarte a pasar el tiempo.",
+     "numberPersonsInvolved" : 0,
+    "tag" : ["trabajo, juego"],
+    "optionsText": [
+    ["Ver algunos videos de ciencias.", "Es increible que el universo haya iniciado como un estornudo involuntario. Todo lo que aprendiste te abre la mente a futuros increibles.", 0,20,0,-5,-10,2500,0],
+    ["Ver videos sobre hacks and tricks del hogar.","¿Así que con tan solo atando con una soga, una ardilla a un megáfono, se puede improvisar un excelente megáfono-ardilla? cuanto darán por esto en ebay?", 0,15,0,0,15,1000,0],
+    ["Ver videos conspirativos.","Quizá fue mala idea combinarlo con esa última botella de licor, pero no tienes ninguna duda que todo es culpa de ardillas. TODO.", -15,30,0,0,-10,0,5]
+    ],
+    "desperateTrigger": [-1,25,-1,-1,25,-1]
+  },
+             "023": {
+    "eventText": "Es momento de hacer algo de ejercício. El cuerpo achanchado y sedentario sobre la silla no es una buena defensa en la pandemia.",
+     "numberPersonsInvolved" : 1,
+    "tag" : ["profesional, visita"],
+    "optionsText": [
+    ["Pedirle al personal trainer que venga. ($2000)", "Sabes que {nombre} es un profesional y tendrá los recaudos necesarios. Trajo sus herramientas y llevaste tu cuerpo al límite.", 10,20,-15,-15,15,-2000,10],
+    ["Hacer una rutina sencilla.","Tratas de que sea algo que no te quite tiempo. El aire fresco de la terraza y el buen sol, te ejercítas hasta quedar satisfecho.", 10,10,-10,-10,-10,0,0],
+    ["Ir al parque a hacer ejercicios. Esa rutina Saitama suena bien.","100 abdominales, 100 lagartijas y una carrera de 10 kilometros al parque. Sientes como hasta tus cabellos se hacen más fuertes.", 50,30,-20,-20,-20,0,10]
+    ],
+    "desperateTrigger": [25,25,-1,-1,-1,-1]
+  },
+             "024": {
+    "eventText": "Es día de pago. Las noticias muestran largas colas en el banco. Lamentas no haberte levantado más temprano, pero necesitas el efectivo.",
+     "numberPersonsInvolved" : 5,
+    "tag" : ["noticias, emergencia, evento"],
+    "optionsText": [
+    ["Esperar unos días a que se calme.", "El dinero no se va a ir a ninguna parte... Esperas que así sea... Unos días más hasta que se calme y descongestione es sensato.", 0,-15,0,-15,0,15000,15],
+    ["Exigir que te hagan un depósito bancario.","No hay absolutamente ninguna razón lógica para que ir al banco, todo lo que usas y haces funciona con tarjeta. Te insultan por teléfono, pero hacen el pago online.", 0,-10,0,0,-20,10000,5],
+    ["Enviar al abuelo a cobrar por ti. De todas formas el viejo va al mismo lugar por su jubilación.","El abuelo esta muerto. Vas al hospital para retirar tu sobre que aún lo tenía con él... y su jubilación.", -10,-25,0,0,0,20000,25]
+    ],
+    "desperateTrigger": [25,-1,-1,-1,-1,5000]
   }
-     
+       
 }
