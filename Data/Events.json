@@ -121,7 +121,7 @@
     "desperateTrigger": [-1,-1,-1,-1,-1,10000]
   },
         "012": {
-    "eventText": "Escuchas afuera una gran conglomeración de gente. Están rodeando un gigantesco totem de madera con el rostro de un dios primigenio. Un grupo toca tu puerta y te invita a pedir clemencia y el pronto regreso de no se qué.",
+    "eventText": "Escuchas afuera una gran conglomeración de gente. Están prendiendo fuego cadáveres en la calle... Un grupo en túnica toca tu puerta y piden que te sumes al ritual.",
        "numberPersonsInvolved" : 3,
     "tag" : ["evento,religion"],
     "optionsText": [
@@ -262,6 +262,60 @@
     ["Enviar al abuelo a cobrar por ti. De todas formas el viejo va al mismo lugar por su jubilación.","El abuelo esta muerto. Vas al hospital para retirar tu sobre que aún lo tenía con él... y su jubilación.", -10,-25,0,0,0,20000,25]
     ],
     "desperateTrigger": [25,-1,-1,-1,-1,5000]
-  }
-       
+  },
+             "025": {
+    "eventText": "En todos los canales de la tele se habla que todo está bien, sólo hay problemas en temas políticos. La cuarentena ya está terminando. ¿Será tan así?.",
+     "numberPersonsInvolved" : 3,
+    "tag" : ["noticias, evento"],
+    "optionsText": [
+    ["Consultar las fuentes y preguntar en las redes del tema.", "Descubres que solo una parte es cierto, lo que muestran en los medios es apenas lo incubrible, tapado por miles de otros datos inútiles se esconde corrupción y manipulación.", -5,-15,0,0,-20,-1500,5],
+    ["Desconectar el cable y pedir la baja del servicio.","Ya es tiempo de ahorrar y cortar con esos vicios que no aportan nada realmente. Das de baja el canal y mantienes internet, de todas formas hace decadas que no ves tele, todo está en internet si sabes buscar.", -5,-10,0,0,-20,1500,10],
+    ["Compartir con todas tus redes lo que acabas de ver. Es la hora de salir y respirar aire puro.","Lo compartes en el grupo del barrio. Ves a {nombre} salir a la calle a aplaudir y abrazarse. La mitad murieron por el virus. Suerte que tu no haces caso a todo lo que pasa en las redes.", -10,20,-10,0,20,0,20]
+    ],
+    "desperateTrigger": [-1,20,-1,-1,20,-1]
+  },
+             "026": {
+    "eventText": "Volviendo de tus compras te cruzas con un hombre descamizado y sudado que te sujeta y usa de escudo. Este grita desaforado mientras personal de seguridad trata de contenerlo.",
+     "numberPersonsInvolved" : 5,
+    "tag" : ["emergencia, evento"],
+    "optionsText": [
+    ["Tratar de razonar con él. Seguro se puede llegar a un acuerdo a cambio de algo.", "Le ofreces todo lo que compraste a cambio de tu libertad. No parece escucharte y tira tus cosas por el aire. Grita que no quiere volver al hospital. Por suerte los de seguridad lo atacan por la espalda y lo reducen.", -25,-15,-15,0,-5,-1500,5],
+    ["Esperar que el pesonal de seguridad actúe o te diga qué hacer.","Los de seguridad tratan de convencerlo que te suelte. Tras un largo dialogo llegan a un acuerdo en el que lo dejan ir, no volverá al hospital del que escapó. No crees que fuera un buen intercambio, se veía muy enfermo.", -10,10,-15,-10,10,-1500,15],
+    ["Algo está mal en esto, decirle que lo apollas. Quitarte la camisa y ponerte en guardia.","Libran una feroz batalla, tu compañero descamizado es experto en vomitar a distancia, los de seguridad ruedan en el piso aterrados. Tu ayuda defendiendo su espalda fue vital para que escape... ¿cómo resistió tantas balas?.", -10,30,-25,-10,15,0,25]
+    ],
+    "desperateTrigger": [-1,25,-1,-1,25,-1]
+  },
+             "027": {
+    "eventText": "Mientras miras esa serie de 900 capitulos de un pirata de plástico, pides un combo de comida usando PedidosFua! Llega 5 horas tarde, {nombre} te lo entrega disculpándose, que es muy difícil trabajar en este estado.",
+     "numberPersonsInvolved" : 1,
+    "tag" : ["delivery, mercado"],
+    "optionsText": [
+    ["Pedirle un descuento para no puntuarlo mal en la app. Es algo sencillo, simplemente no te cobra el envío.", "Con cara de frustración acepta el trato. Lo ves subirse a su bicicleta con 3 carritos enganchados e irse. Sigues con tu serie mientras comes como un rey.", 0,-10,-10,40,-15,-500,5],
+    ["Decirle que no hay problema. Pagarle y volver a tu serie.","Te hubiera gustado un descuento, pero la verdad es que sabes lo complicado de todo, le pagas lo que corresponde y continuas con la serie. Sientes un poco de pena por {nombre}.", 0,-10,-10,40,10,-800,5],
+    ["Ya te comiste las sobras de ayer. No te hace falta, decirle que se vuelva.","El delivery insiste que no puede hacer eso pero tu puerta no parece estremecerse y sigue cerrada. Escuchas sus llantos mientras se sube a su bicicleta tirando 3 carritos. La próxima pides en otra app.", 0,-10,0,25,-15,0,5]
+    ],
+    "desperateTrigger": [25,-1,-1,-1,-1,500]
+  },
+             "028": {
+    "eventText": "Te pasan una nueva receta para combatir el virus. Tan solo necesitas hacer gargaras con vinagre.",
+     "numberPersonsInvolved" : 0,
+    "tag" : ["cheff"],
+    "optionsText": [
+    ["Probarlo. No va a hacerte daño y puede ayudarte.", "No llegas a ponerte un sorbo de vinagre en la boca que escupes todo. Claramente eso mata bacterias pero lavarse los dientes tiene el mismo resultado.", 20,0,10,10,-15,0,0],
+    ["Dudar y decirle a esa persona que no crees en esas cosas.","Investigas unos segundos en internet y es fácil llegar a la conclución de que todas esas recetas de cosas en la boca son lo mismo que lavarse los dientes.", 20,-10,10,0,-10,0,0],
+    ["Sacar el vinagre más fuerte de la alacena. Si vamos a hacerlo, que sea bien.","Cierras los ojos y aprietas la botella de vinagre te enjuague hasta el fondo de la garganta. Sientes como todo e arde y lloras de la emoción. Tu estómago tiene una opinión al respecto y deciden debatirlo en el baño.", -10,20,20,-10,0,0,5]
+    ],
+    "desperateTrigger": [-1,-1,25,25,-1,-1]
+  },
+             "029": {
+    "eventText": "Te pasan una nueva receta para combatir el virus. Tan solo necesitas hacer gargaras con vinagre.",
+     "numberPersonsInvolved" : 0,
+    "tag" : ["delivery, mercado"],
+    "optionsText": [
+    ["Probarlo. No va a hacerte daño y puede ayudarte.", "No llegas a ponerte un sorbo de vinagre en la boca que escupes todo. Claramente eso mata bacterias pero lavarse los dientes tiene el mismo resultado.", 20,0,10,10,-15,0,0],
+    ["Dudar y decirle a esa persona que no crees en esas cosas.","Investigas unos segundos en internet y es fácil llegar a la conclución de que todas esas recetas de cosas en la boca son lo mismo que lavarse los dientes.", 20,-10,10,0,-10,0,0],
+    ["Sacar el vinagre más fuerte de la alacena. Si vamos a hacerlo, que sea bien.","Cierras los ojos y aprietas la botella de vinagre te enjuague hasta el fondo de la garganta. Sientes como todo e arde y lloras de la emoción. Tu estómago tiene una opinión al respecto y deciden debatirlo en el baño.", -10,20,20,-10,0,0,5]
+    ],
+    "desperateTrigger": [-1,-1,25,25,-1,-1]
+  }        
 }
