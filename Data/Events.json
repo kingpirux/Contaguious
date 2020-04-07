@@ -299,7 +299,7 @@
              "028": {
     "eventText": "Te pasan una nueva receta para combatir el virus. Tan solo necesitas hacer gargaras con vinagre.",
      "numberPersonsInvolved" : 0,
-    "tag" : ["cheff"],
+    "tag" : ["cheff, medico"],
     "optionsText": [
     ["Probarlo. No va a hacerte daño y puede ayudarte.", "No llegas a ponerte un sorbo de vinagre en la boca que escupes todo. Claramente eso mata bacterias pero lavarse los dientes tiene el mismo resultado.", 20,0,10,10,-15,0,0],
     ["Dudar y decirle a esa persona que no crees en esas cosas.","Investigas unos segundos en internet y es fácil llegar a la conclución de que todas esas recetas de cosas en la boca son lo mismo que lavarse los dientes.", 20,-10,10,0,-10,0,0],
@@ -308,14 +308,25 @@
     "desperateTrigger": [-1,-1,25,25,-1,-1]
   },
              "029": {
-    "eventText": "Te pasan una nueva receta para combatir el virus. Tan solo necesitas hacer gargaras con vinagre.",
+    "eventText": "Te invitan a participar de una actividad social en linea interesante: Tienes que crear junto a otras personas desconocidas un juego.",
      "numberPersonsInvolved" : 0,
-    "tag" : ["delivery, mercado"],
+    "tag" : ["juego, amigo"],
     "optionsText": [
-    ["Probarlo. No va a hacerte daño y puede ayudarte.", "No llegas a ponerte un sorbo de vinagre en la boca que escupes todo. Claramente eso mata bacterias pero lavarse los dientes tiene el mismo resultado.", 20,0,10,10,-15,0,0],
-    ["Dudar y decirle a esa persona que no crees en esas cosas.","Investigas unos segundos en internet y es fácil llegar a la conclución de que todas esas recetas de cosas en la boca son lo mismo que lavarse los dientes.", 20,-10,10,0,-10,0,0],
-    ["Sacar el vinagre más fuerte de la alacena. Si vamos a hacerlo, que sea bien.","Cierras los ojos y aprietas la botella de vinagre te enjuague hasta el fondo de la garganta. Sientes como todo e arde y lloras de la emoción. Tu estómago tiene una opinión al respecto y deciden debatirlo en el baño.", -10,20,20,-10,0,0,5]
+    ["Entrar y participar pasivamente. Tienes trabajo y vivir solo hace que sea más difícil mantener la casa.", "Te inscribes y participas como ayudante en un proyecto curioso. Es sobre una persona encerrada en la cuarentena y el jugador debe ir tomando desiciones sobre su vida.", 0,20,0,0,20,0,0],
+    ["Inscribirte y participar con aquella idea que siempre tuviste. Sacrificarás más tiempo pero porfin le darás vida.","Investigas unos segundos en internet y es fácil llegar a la conclución de que todas esas recetas de cosas en la boca son lo mismo que lavarse los dientes.", -5,30,-15,0,30,0,0],
+    ["Esperabas por algo así. Es hora de mega-jammear.","Te encierras y participas en todos los proyectos que puedes. Con todas las posiciones y trabajos. No necesitas dormir, comer o salir. ¿Crunchear? Esto es jammear, es casi igual pero sin paga y más pación.", -15,50,-20,-20,50,0,5]
     ],
-    "desperateTrigger": [-1,-1,25,25,-1,-1]
-  }        
+    "desperateTrigger": [-1,25,-1,-1,25,-1]
+  }  ,
+             "030": {
+    "eventText": "La soledad por las noches desespera. Contactas a {nombre}. Quieres hacer algo con esta persona, la extrañas mucho y el tiempo parece eterno, unos dias de cuarentena se estiraron como años.",
+     "numberPersonsInvolved" : 1,
+    "tag" : ["pareja"],
+    "optionsText": [
+    ["Preguntarle si quiere hacer algo de sexting. Ya sea texto unicamente o fotos, quieres verle y soñar y disfrutarle.", "A {nombre} no parece gustarle mucho, pero te aprecia y sabe de tus fetiches. Pasan una noche curiosa y jugona, al final también lo disfruta un poco.", 0,20,0,0,25,0,0],
+    ["Preguntarle si quiere jugar online. Hace tiempo que no juegan aquel viejo MMORPG donde se conocieron.","Reactivan sus cuentas en el viejo MMORPG, entre risas y comentarios de cómo ha envejecido este juego comparado con los nuevos, pasan una linda noche de ciberenamorados.", 0,15,0,0,15,0,0],
+    ["Insistirle para hacer sexting. Necesitas fotos y videos y material para tus momentos a solas.","Parece no gustarle el tono en el que lo pides, pero lo hace de todas formas, conoce tus fetiches y te envía videos y fotos haciendo lo que le pides. No puedes evitar notar la cara de asco al saludarte al final.", 0,50,0,0,-10,0,0]
+    ],
+    "desperateTrigger": [-1,20,-1,-1,-1,-1]
+  }      
 }
